@@ -1,0 +1,269 @@
+{\rtf1\ansi\ansicpg1252
+{\fonttbl
+{\f1\fnil\fcharset0\fprq0 Arial;}
+{\f2\fnil\fcharset0\fprq0 Times New Roman;}
+{\f3\fnil\fcharset0\fprq0 Verdana;}
+{\f4\fnil\fcharset0\fprq0 Courier New;}
+}
+{\colortbl;
+\red0\green127\blue163;
+\red0\green0\blue0;
+\red0\green0\blue255;
+}
+{\stylesheet
+{\s1\loch\af1\dbch\f1\fs32\cf2\lang1033\level1 heading 1;}
+{\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\level2 heading 2;}
+{\s3\li1440\loch\af1\dbch\f1\fs28\cf2\lang1033\level3 heading 3;}
+{\s4\li2160\loch\af1\dbch\f1\fs28\cf2\lang1033\level4 heading 4;}
+{\s5\li2880\loch\af1\dbch\f1\fs28\cf2\lang1033\level5 heading 5;}
+{\s6\li3600\loch\af1\dbch\f1\fs28\cf2\lang1033\level6 heading 6;}
+{\s7\li4320\loch\af1\dbch\f1\fs28\cf2\lang1033\level7 heading 7;}
+{\s8\li5040\loch\af1\dbch\f1\fs28\cf2\lang1033\level8 heading 8;}
+{\s9\li5760\loch\af1\dbch\f1\fs28\cf2\lang1033\level9 heading 9;}
+}
+\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs60\cf1 Introduction to Java Programming and Data Structures\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li0 {\dbch\af1\loch\f1\fs40\cf1 Thirteenth Edition\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li0\qc {\b\dbch\af1\loch\f1\fs60 Chapter 9\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li0\qc {\dbch\af1\loch\f1\fs44 Objects and Classes\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li0\qr {\dbch\af3\loch\f3\fs24 Copyright \'a9 }{\dbch\af3\loch\f3\fs24 2024 }{\dbch\af3\loch\f3\fs24 Pearson Education, Inc. All Rights Reserved\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Motivations\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 After learning the preceding chapters, you are capable of solving many programming problems using selections, loops, methods, and arrays. However, these Java features are not sufficient for developing graphical user interfaces and large scale software systems. Suppose you want to develop a graphical user interface as shown below. How do you program it?\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Objectives }{\dbch\af1\loch\f1\fs40\cf1 (1 of 3)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f1\fs36\cf1 9.1}{\dbch\af1\loch\f1\fs36  To describe objects and classes, and use classes to model objects (\'a79.2).\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f1\fs36\cf1 9.2}{\dbch\af1\loch\f1\fs36  To use U}{\dbch\af1\loch\f1\fs2  }{\dbch\af1\loch\f1\fs36 M}{\dbch\af1\loch\f1\fs2  }{\dbch\af1\loch\f1\fs36 L graphical notation to describe classes and objects (\'a79.2).\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f1\fs36\cf1 9.3}{\dbch\af1\loch\f1\fs36  To demonstrate how to define classes and create objects (\'a79.3).\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f1\fs36\cf1 9.4}{\dbch\af1\loch\f1\fs36  To create objects using constructors (\'a79.4).\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f1\fs36\cf1 9.5}{\dbch\af1\loch\f1\fs36  To define a reference variable using a reference type and access objects via object reference variables (\'a79.5). \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f1\fs36\cf1 9.6}{\dbch\af1\loch\f1\fs36  To access an object\'92s data and methods using the object member access operator (.) (\'a79.5.1).\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f1\fs36\cf1 9.7}{\dbch\af1\loch\f1\fs36  To define data fields of reference types and assign default values for an object\'92s data fields (\'a79.5.2).\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Objectives }{\dbch\af1\loch\f1\fs40\cf1 (2 of 3)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f1\fs36\cf1 9.8}{\dbch\af1\loch\f1\fs36  To distinguish between object reference variables and primitive data type variables (\'a79.5.3).\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f1\fs36\cf1 9.9}{\dbch\af1\loch\f1\fs36  To use the Java library classes }{\b\dbch\af1\loch\f4\fs36 Date}{\dbch\af1\loch\f1\fs36 , }{\b\dbch\af1\loch\f4\fs36 Random}{\dbch\af1\loch\f1\fs36 , and }{\b\dbch\af1\loch\f4\fs36 Point2D}{\dbch\af1\loch\f1\fs36  (\'a79.6).\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f1\fs36\cf1 9.10}{\dbch\af1\loch\f1\fs36  To distinguish between instance and static variables and methods (\'a79.7).\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f1\fs36\cf1 9.11}{\dbch\af1\loch\f1\fs36  To define private data fields with appropriate }{\b\dbch\af1\loch\f4\fs36 get}{\dbch\af1\loch\f1\fs36  and }{\b\dbch\af1\loch\f4\fs36 set}{\dbch\af1\loch\f1\fs36  methods (\'a79.8).\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f1\fs36\cf1 9.12}{\dbch\af1\loch\f1\fs36  To encapsulate data fields to make classes easy to maintain (\'a79.9).\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f1\fs36\cf1 9.13}{\dbch\af1\loch\f1\fs36  To develop methods with object arguments and differentiate between primitive-type arguments and object-type arguments (\'a79.10).\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f1\fs36\cf1 9.14}{\dbch\af1\loch\f1\fs36  To store and process objects in arrays (\'a79.11).\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Objectives }{\dbch\af1\loch\f1\fs40\cf1 (3 of 3)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f1\fs48\cf1 9.15}{\dbch\af1\loch\f1\fs48  To create immutable objects from immutable classes to protect the contents of objects (\'a79.12).\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f1\fs48\cf1 9.16}{\dbch\af1\loch\f1\fs48  To determine the scope of variables in the context of a class (\'a79.13).\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f1\fs48\cf1 9.17}{\dbch\af1\loch\f1\fs48  To use the keyword }{\b\dbch\af1\loch\f4\fs48 this}{\dbch\af1\loch\f1\fs48  to refer to the calling object itself (\'a79.14).\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 O}{\b\dbch\af1\loch\f1\fs2\cf1  }{\b\dbch\af1\loch\f1\fs72\cf1 O Programming Concepts\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Object-oriented programming (O}{\dbch\af1\loch\f1\fs2  }{\dbch\af1\loch\f1\fs48 O}{\dbch\af1\loch\f1\fs2  }{\dbch\af1\loch\f1\fs48 P) involves programming using objects. An }{\b\dbch\af1\loch\f1\fs48 object}{\dbch\af1\loch\f1\fs48  represents an entity in the real world that can be distinctly identified. For example, a student, a desk, a circle, a button, and even a loan can all be viewed as objects. An object has a unique identity, state, and behaviors. The }{\b\dbch\af1\loch\f1\fs48 state}{\dbch\af1\loch\f1\fs48  of an object consists of a set of }{\b\dbch\af1\loch\f1\fs48 data fields }{\dbch\af1\loch\f1\fs48 (also known as }{\b\dbch\af1\loch\f1\fs48 properties}{\dbch\af1\loch\f1\fs48 ) with their current values. The }{\b\dbch\af1\loch\f1\fs48 behavior}{\dbch\af1\loch\f1\fs48  of an object is defined by a set of methods.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Objects\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 An object has both a state and behavior. The state defines the object, and the behavior defines what the object does.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Classes }{\dbch\af1\loch\f1\fs40\cf1 (1 of 2)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f1\fs48 Classes}{\dbch\af1\loch\f1\fs48  are constructs that define objects of the same type. A Java class uses variables to define data fields and methods to define behaviors. Additionally, a class provides a special type of methods, known as constructors, which are invoked to construct objects from the class.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Classes }{\dbch\af1\loch\f1\fs40\cf1 (2 of 2)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 U}{\b\dbch\af1\loch\f1\fs2\cf1  }{\b\dbch\af1\loch\f1\fs72\cf1 M}{\b\dbch\af1\loch\f1\fs2\cf1  }{\b\dbch\af1\loch\f1\fs72\cf1 L Class Diagram\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 Example: Defining Classes and Creating Objects }{\dbch\af1\loch\f1\fs40\cf1 (1 of 2)}{\dbch\af1\loch\f1\fs64\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Objective: Demonstrate creating objects, accessing data, and using methods.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs48 TestSimpleCircle}{\ul\dbch\af1\loch\f1\fs48 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 Example: Defining Classes and Creating Objects }{\dbch\af1\loch\f1\fs40\cf1 (2 of 2)}{\dbch\af1\loch\f1\fs64\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs48 TV\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs48 TestTV\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Constructors }{\dbch\af1\loch\f1\fs40\cf1 (1 of 2)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs48 Circle() \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs48 \'7d\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs48 Circle(double newRadius) \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\b\dbch\af1\loch\f4\fs48 radius = newRadius;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs48 \'7d\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Constructors are a special kind of methods that are invoked to construct objects.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Constructors }{\dbch\af1\loch\f1\fs40\cf1 (2 of 2)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 A constructor with no parameters is referred to as a }{\b\dbch\af1\loch\f1\fs48 no-}{\b\dbch\af1\loch\f1\fs48 arg}{\b\dbch\af1\loch\f1\fs48  constructor}{\dbch\af1\loch\f1\fs48 .\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f1\fs48 Constructors must have the same name as the class itself.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f1\fs48 Constructors do not have a return type\'97not even void.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f1\fs48 Constructors are invoked using the new operator when an object is created. Constructors play the role of initializing objects.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 Creating Objects Using Constructors\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs48 new ClassName();}{\dbch\af1\loch\f1\fs48 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Example:\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs48 new Circle();}{\dbch\af1\loch\f1\fs48 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs48 new Circle(5.0);\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Default Constructor\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 A class may be defined without constructors. In this case, a no-}{\dbch\af1\loch\f1\fs48 arg}{\dbch\af1\loch\f1\fs48  constructor with an empty body is implicitly defined in the class. This constructor, called a }{\b\dbch\af1\loch\f1\fs48 default constructor}{\dbch\af1\loch\f1\fs48 , is provided automatically }{\b\dbch\af1\loch\f1\fs48 only if no constructors are explicitly defined in the class}{\dbch\af1\loch\f1\fs48 .\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs68\cf1 Declaring Object Reference Variables\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 To reference an object, assign the object to a reference variable.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 To declare a reference variable, use the syntax:\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs48 ClassName objectRefVar;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Example:\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs48 Circle myCircle;\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 Declaring/Creating Objects in a Single Step\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs48 ClassName objectRefVar = new ClassName();}{\dbch\af1\loch\f1\fs48 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Example:\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Accessing Object\'92s Members\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f1\fs48 Referencing the object\'92s data:\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1168\fi-448 {\dbch\af1\loch\f4\fs48 objectRefVar.data\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1168\fi-448 {\dbch\af1\loch\f1\fs48 e.g., }{\dbch\af1\loch\f4\fs48 myCircle.radius\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f1\fs48 Invoking the object\'92s method:\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1168\fi-448 {\dbch\af1\loch\f4\fs48 objectRefVar.methodName(arguments)\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1168\fi-448 {\dbch\af1\loch\f1\fs48 e.g., }{\dbch\af1\loch\f4\fs48 myCircle.getArea()\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace Code }{\dbch\af1\loch\f1\fs40\cf1 (1 of 7)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace Code }{\dbch\af1\loch\f1\fs40\cf1 (2 of 7)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace Code }{\dbch\af1\loch\f1\fs40\cf1 (3 of 7)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace Code }{\dbch\af1\loch\f1\fs40\cf1 (4 of 7)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace Code }{\dbch\af1\loch\f1\fs40\cf1 (5 of 7)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace Code }{\dbch\af1\loch\f1\fs40\cf1 (6 of 7)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace Code }{\dbch\af1\loch\f1\fs40\cf1 (7 of 7)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Caution\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs40 Recall that you use\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403 {\dbch\af1\loch\f4\fs40 Math.methodName(arguments)}{\dbch\af1\loch\f1\fs40  (e.g., }{\dbch\af1\loch\f4\fs40 Math.pow(3, 2.5)}{\dbch\af1\loch\f1\fs40 )\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs40 to invoke a method in the Math class. Can you invoke }{\dbch\af1\loch\f4\fs40 getArea()}{\dbch\af1\loch\f1\fs40  using }{\dbch\af1\loch\f4\fs40 SimpleCircle.getArea()?}{\dbch\af1\loch\f1\fs40  The answer is no. All the methods used before this chapter are static methods, which are defined using the static keyword. However, }{\dbch\af1\loch\f4\fs40 getArea()}{\dbch\af1\loch\f1\fs40  is non-static. It must be invoked from an object using\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403 {\dbch\af1\loch\f4\fs40 objectRefVar.methodName(arguments) }{\dbch\af1\loch\f1\fs40 (e.g., }{\dbch\af1\loch\f4\fs40 myCircle.getArea()}{\dbch\af1\loch\f1\fs40 ).\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs40 More explanations will be given in the section on \'93Static Variables, Constants, and Methods.\'94\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Reference Data Fields\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 The data fields can be of reference types. For example, the following Student class contains a data field name of the String type.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs48 public class Student \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\b\dbch\af1\loch\f4\fs48 String name; // name has default value null\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\b\dbch\af1\loch\f4\fs48 int age; // age has default value 0\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\b\dbch\af1\loch\f4\fs48 boolean isScienceMajor; // isScienceMajor has default value false\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\b\dbch\af1\loch\f4\fs48 char gender; // c has default value '\'5cu0000\'92\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li0 {\b\dbch\af1\loch\f4\fs48 \'7d\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 The Null Value\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 If a data field of a reference type does not reference any object, the data field holds a special literal value, null.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Default Value for a Data Field\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs40 The default value of a data field is null for a reference type, 0 for a numeric type, false for a boolean type, and }{\dbch\af1\loch\f4\fs40 '\'5cu0000'}{\dbch\af1\loch\f1\fs40  for a char type. However, Java assigns no default value to a local variable inside a method.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs40 public class Test \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\b\dbch\af1\loch\f4\fs40 public static void main(String[] args) \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567 {\b\dbch\af1\loch\f4\fs40 Student student = new Student();\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567 {\b\dbch\af1\loch\f4\fs40 System.out.println("name? " + student.name);\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567 {\b\dbch\af1\loch\f4\fs40 System.out.println("age? " + student.age);\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567 {\b\dbch\af1\loch\f4\fs40 System.out.println("isScienceMajor? " + student.isScienceMajor);\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567 {\b\dbch\af1\loch\f4\fs40 System.out.println("gender? " + student.gender);\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\b\dbch\af1\loch\f4\fs40 \'7d\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs40 \'7d\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Example }{\dbch\af1\loch\f1\fs40\cf1 (1 of 3)}{\b\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Java assigns no default value to a local variable inside a method.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs60\cf1 Differences Between Variables of Primitive Data Types and Object Types\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 Copying Variables of Primitive Data Types and Object Types\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Garbage Collection }{\dbch\af1\loch\f1\fs40\cf1 (1 of 2)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 As shown in the previous figure, after the assignment statement c1 = c2, c1 points to the same object referenced by c2. The object previously referenced by c1 is no longer referenced. This object is known as garbage. Garbage is automatically collected by J}{\dbch\af1\loch\f1\fs2  }{\dbch\af1\loch\f1\fs48 V}{\dbch\af1\loch\f1\fs2  }{\dbch\af1\loch\f1\fs48 M.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Garbage Collection }{\dbch\af1\loch\f1\fs40\cf1 (2 of 2)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f1\fs48 Tip}{\dbch\af1\loch\f1\fs48 : If you know that an object is no longer needed, you can explicitly assign null to a reference variable for the object. The J}{\dbch\af1\loch\f1\fs2  }{\dbch\af1\loch\f1\fs48 V}{\dbch\af1\loch\f1\fs2  }{\dbch\af1\loch\f1\fs48 M will automatically collect the space if the object is not referenced by any variable.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 The }{\b\dbch\af1\loch\f4\fs72\cf1 Date}{\b\dbch\af1\loch\f1\fs72\cf1  Class\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Java provides a system-independent encapsulation of date and time in the }{\b\dbch\af1\loch\f4\fs48 java.util.Date class}{\dbch\af1\loch\f1\fs48 . You can use the }{\b\dbch\af1\loch\f4\fs48 Date}{\dbch\af1\loch\f1\fs48  class to create an instance for the current date and time and use its }{\b\dbch\af1\loch\f4\fs48 toString}{\dbch\af1\loch\f1\fs48  method to return the date and time as a string.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 The }{\b\dbch\af1\loch\f4\fs72\cf1 Date}{\b\dbch\af1\loch\f1\fs72\cf1  Class Example\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 For example, the following code\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403 {\dbch\af1\loch\f4\fs48 java.util.Date date = new java.util.Date();\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403 {\dbch\af1\loch\f4\fs48 System.out.println(date.toString());\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 displays a string like }{\b\dbch\af1\loch\f4\fs48 Sun Mar 09 13:50:19 EST 2003}{\dbch\af1\loch\f1\fs48 .\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 The }{\b\dbch\af1\loch\f4\fs72\cf1 Random}{\b\dbch\af1\loch\f1\fs72\cf1  Class\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 You have used }{\b\dbch\af1\loch\f4\fs48 Math.random()}{\dbch\af1\loch\f1\fs48  to obtain a random double value between 0.0 and 1.0 (excluding 1.0). A more useful random number generator is provided in the }{\b\dbch\af1\loch\f4\fs48 java.util.Random}{\dbch\af1\loch\f1\fs48  class.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 The }{\b\dbch\af1\loch\f4\fs72\cf1 Random}{\b\dbch\af1\loch\f1\fs72\cf1  Class Example\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs40 If two }{\b\dbch\af1\loch\f4\fs40 Random}{\dbch\af1\loch\f1\fs40  objects have the same seed, they will generate identical sequences of numbers. For example, the following code creates two }{\b\dbch\af1\loch\f4\fs40 Random}{\dbch\af1\loch\f1\fs40  objects with the same seed 3.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs40 Random random1 = new Random(3);\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs40 System.out.print("From random1: ");\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs40 for (int i = 0; i < 10; i++)\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\b\dbch\af1\loch\f4\fs40 System.out.print(random1.nextInt(1000) + " ");\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs40 Random random2 = new Random(3);\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs40 System.out.print("\'5cnFrom random2: ");\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs40 for (int i = 0; i < 10; i++)\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\b\dbch\af1\loch\f4\fs40 System.out.print(random2.nextInt(1000) + " ");\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs40 From random1: 734 660 210 581 128 202 549 564 459 961\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs40 From random2: 734 660 210 581 128 202 549 564 459 961\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 The }{\b\dbch\af1\loch\f4\fs72\cf1 Point2D}{\b\dbch\af1\loch\f1\fs72\cf1  Class\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Java A}{\dbch\af1\loch\f1\fs2  }{\dbch\af1\loch\f1\fs48 P}{\dbch\af1\loch\f1\fs2  }{\dbch\af1\loch\f1\fs48 I has a conveninent }{\b\dbch\af1\loch\f4\fs48 Point2D}{\dbch\af1\loch\f1\fs48  class in the }{\b\dbch\af1\loch\f4\fs48 javafx.geometry}{\b\dbch\af1\loch\f1\fs48  }{\dbch\af1\loch\f1\fs48 package for representing a point in a two-dimensional plane.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs48 TestPoint2D}{\ul\dbch\af1\loch\f1\fs48 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Instance Variables, and Methods\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Instance variables belong to a specific instance.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Instance methods are invoked by an instance of the class.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 Static Variables, Constants, and Methods }{\dbch\af1\loch\f1\fs40\cf1 (1 of 3)}{\dbch\af1\loch\f1\fs64\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Static variables are shared by all the instances of the class.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Static methods are not tied to a specific object.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Static constants are final variables shared by all the instances of the class.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 Static Variables, Constants, and Methods }{\dbch\af1\loch\f1\fs40\cf1 (2 of 3)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 To declare static variables, constants, and methods, use the static modifier.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 Static Variables, Constants, and Methods }{\dbch\af1\loch\f1\fs40\cf1 (3 of 3)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 Example of Using Instance and Class Variables and Method\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Objective: Demonstrate the roles of instance and class variables and their uses. This example adds a class variable }{\dbch\af1\loch\f4\fs48 numberOfObjects}{\dbch\af1\loch\f1\fs48  to track the number of Circle objects created.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs48 CircleWithStaticMembers}{\ul\dbch\af1\loch\f1\fs48 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs48 TestCircleWithStaticMembers}{\ul\dbch\af1\loch\f1\fs48 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs60\cf1 Visibility Modifiers and Accessor/Mutator Methods }{\dbch\af1\loch\f1\fs40\cf1 (1 of 3)}{\b\dbch\af1\loch\f1\fs40\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 By default, the class, variable, or method can be accessed by any class in the same package.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f4\fs48 Public\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403 {\dbch\af1\loch\f1\fs48 The class, data, or method is visible to any class in any package.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f4\fs48 Private\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 The data or methods can be accessed only by the declaring class.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 The get and set methods are used to read and modify private properties.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs60\cf1 Visibility Modifiers and Accessor/Mutator Methods }{\dbch\af1\loch\f1\fs40\cf1 (2 of 3)\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 The private modifier restricts access to within a class, the default modifier restricts access to within a package, and the public modifier enables unrestricted access.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs60\cf1 Visibility Modifiers and Accessor/Mutator Methods }{\dbch\af1\loch\f1\fs40\cf1 (3 of 3)}{\b\dbch\af1\loch\f1\fs60\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 The default modifier on a class restricts access to within a package, and the public modifier enables unrestricted access.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Note\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 An object cannot access its private members, as shown in (b). It is }{\b\dbch\af1\loch\f1\fs48 Ok}{\dbch\af1\loch\f1\fs48 , however, if the object is declared in its own class, as shown in (a).\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Why Data Fields Should Be Private?\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 To protect data.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 To make code easy to maintain.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Example of Data Field Encapsulation\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs48 CircleWithPrivateDataFields}{\ul\dbch\af1\loch\f1\fs48 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs48 TestCircleWithPrivateDataFields}{\ul\dbch\af1\loch\f1\fs48 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Passing Objects to Methods }{\dbch\af1\loch\f1\fs40\cf1 (1 of 2)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f1\fs48 Passing by value for primitive type value (the value is passed to the parameter)\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f1\fs48 Passing by value for reference type value (the value is the reference to the object)\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs48 TestPassObject}{\ul\dbch\af1\loch\f1\fs48 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Passing Objects to Methods }{\dbch\af1\loch\f1\fs40\cf1 (2 of 2)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Array of Objects }{\dbch\af1\loch\f1\fs40\cf1 (1 of 3)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs48 Circle[] circleArray = new Circle[10];\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 An array of objects is actually an }{\b\dbch\af1\loch\f1\fs48 array of reference variables}{\dbch\af1\loch\f1\fs48 . So invoking }{\dbch\af1\loch\f4\fs48 circleArray[1].getArea() }{\dbch\af1\loch\f1\fs48 involves two levels of referencing as shown in the next figure. }{\dbch\af1\loch\f4\fs48 circleArray}{\dbch\af1\loch\f1\fs48  references to the entire array. }{\dbch\af1\loch\f4\fs48 circleArray[1]}{\dbch\af1\loch\f1\fs48  references to a }{\dbch\af1\loch\f4\fs48 Circle}{\dbch\af1\loch\f1\fs48  object.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Array of Objects }{\dbch\af1\loch\f1\fs40\cf1 (2 of 3)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs48 Circle[] circleArray = new Circle[10];\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Array of Objects }{\dbch\af1\loch\f1\fs40\cf1 (3 of 3)\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Summarizing the areas of the circles\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs48 TotalArea}{\ul\dbch\af1\loch\f1\fs48 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Immutable Objects and Classes\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 If the contents of an object cannot be changed once the object is created, the object is called an }{\b\dbch\af1\loch\f1\fs48 immutable object }{\dbch\af1\loch\f1\fs48 and its class is called an }{\b\dbch\af1\loch\f1\fs48 immutable class}{\dbch\af1\loch\f1\fs48 . If you delete the set method in the Circle class in Listing 8.10, the class would be immutable because radius is private and cannot be changed without a set method.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 A class with all private data fields and without mutators is not necessarily immutable. For example, the following class Student has all private data fields and no mutators, but it is mutable.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Example }{\dbch\af1\loch\f1\fs40\cf1 (2 of 3)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs32 public class BirthDate \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs32 private int year;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs32 private int month;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs32 private int day;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs32 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs32 public BirthDate(int newYear,\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1134 {\dbch\af1\loch\f4\fs32 int newMonth, int newDay) \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li850 {\dbch\af1\loch\f4\fs32 year = newYear;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li850 {\dbch\af1\loch\f4\fs32 month = newMonth;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li850 {\dbch\af1\loch\f4\fs32 day = newDay;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs32 \'7d\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs32 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs32 public void setYear(int newYear) \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li850 {\dbch\af1\loch\f4\fs32 year = newYear;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs32 \'7d\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li0 {\dbch\af1\loch\f4\fs32 \'7d\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li0 {\dbch\af1\loch\f4\fs32 public class Student \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs32 private int id;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs32 private BirthDate birthDate;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs32 public Student(int ssn,\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567 {\dbch\af1\loch\f4\fs32 int year, int month, int\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs32 day) \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567 {\dbch\af1\loch\f4\fs32 id = ssn;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567 {\dbch\af1\loch\f4\fs32 birthDate = new\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs32 BirthDate(year, month, day);\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567 {\dbch\af1\loch\f4\fs32 \'7d\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs32 public int getId() \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567 {\dbch\af1\loch\f4\fs32 return id;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567 {\dbch\af1\loch\f4\fs32 \'7d\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs32 public BirthDate getBirthDate() \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567 {\dbch\af1\loch\f4\fs32 return birthDate;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567 {\dbch\af1\loch\f4\fs32 \'7d\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs32 \'7d\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Example }{\dbch\af1\loch\f1\fs40\cf1 (3 of 3)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs48 public class Test \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567 {\dbch\af1\loch\f4\fs48 public static void main(String[] args) \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li850 {\dbch\af1\loch\f4\fs48 Student student = new Student(111223333, 1970, 5, 3);\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li850 {\dbch\af1\loch\f4\fs48 BirthDate date = student.getBirthDate(); date.setYear(2010); // Now the student birth year is changed!\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567 {\dbch\af1\loch\f4\fs48 \'7d\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li0 {\dbch\af1\loch\f4\fs48 \'7d\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 What Class Is Immutable?\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 For a class to be immutable, it must mark all data fields private and provide no mutator methods and no accessor methods that would return a reference to a mutable data field object.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Scope of Variables\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f1\fs48 The scope of instance and static variables is the entire class. They can be declared anywhere inside a class.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f1\fs48 The scope of a local variable starts from its declaration and continues to the end of the block that contains the variable. A local variable must be initialized explicitly before it can be used.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 The }{\b\dbch\af1\loch\f4\fs72\cf1 this}{\b\dbch\af1\loch\f1\fs72\cf1  Keyword\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f1\fs48 The }{\b\dbch\af1\loch\f4\fs48 this}{\dbch\af1\loch\f1\fs48  keyword is the name of a reference that refers to an object itself. One common use of the }{\b\dbch\af1\loch\f4\fs48 this}{\dbch\af1\loch\f1\fs48  keyword is reference a class\'92s }{\b\dbch\af1\loch\f1\fs48 hidden data fields}{\dbch\af1\loch\f1\fs48 .\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f1\fs48 Another common use of the }{\b\dbch\af1\loch\f4\fs48 this}{\dbch\af1\loch\f1\fs48  keyword to enable a constructor to invoke another constructor of the same class.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Reference the Hidden Data Fields\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Calling Overloaded Constructor\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Copyright\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li160 {\b\dbch\af1\loch\f1\fs32 This work is protected by United States copyright laws and is provided solely for the use of instructors in teaching their courses and assessing student learning. Dissemination or sale of any part of this work (including on the World Wide Web) will destroy the integrity of the work and is not permitted. The work and materials from it should never be made available to students except by instructors using the accompanying text in their classes. All recipients of this work are expected to abide by these restrictions and to honor the intended pedagogical purposes and the needs of other instructors who rely on these materials.\par 
+}
+}

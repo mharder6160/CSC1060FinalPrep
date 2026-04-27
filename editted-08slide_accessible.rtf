@@ -1,0 +1,160 @@
+{\rtf1\ansi\ansicpg1252
+{\fonttbl
+{\f1\fnil\fcharset0\fprq0 Arial;}
+{\f2\fnil\fcharset0\fprq0 Times New Roman;}
+{\f3\fnil\fcharset0\fprq0 Verdana;}
+{\f4\fnil\fcharset0\fprq0 Courier New;}
+}
+{\colortbl;
+\red0\green127\blue163;
+\red0\green0\blue0;
+\red0\green0\blue255;
+}
+{\stylesheet
+{\s1\loch\af1\dbch\f1\fs32\cf2\lang1033\level1 heading 1;}
+{\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\level2 heading 2;}
+{\s3\li1440\loch\af1\dbch\f1\fs28\cf2\lang1033\level3 heading 3;}
+{\s4\li2160\loch\af1\dbch\f1\fs28\cf2\lang1033\level4 heading 4;}
+{\s5\li2880\loch\af1\dbch\f1\fs28\cf2\lang1033\level5 heading 5;}
+{\s6\li3600\loch\af1\dbch\f1\fs28\cf2\lang1033\level6 heading 6;}
+{\s7\li4320\loch\af1\dbch\f1\fs28\cf2\lang1033\level7 heading 7;}
+{\s8\li5040\loch\af1\dbch\f1\fs28\cf2\lang1033\level8 heading 8;}
+{\s9\li5760\loch\af1\dbch\f1\fs28\cf2\lang1033\level9 heading 9;}
+}
+\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs60\cf1 Introduction to Java Programming and Data Structures\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li0 {\dbch\af1\loch\f1\fs40\cf1 Thirteenth Edition\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li0\qc {\b\dbch\af1\loch\f1\fs60 Chapter 8\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li0\qc {\dbch\af1\loch\f1\fs44 Multidimensional Arrays\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li0\qr {\dbch\af3\loch\f3\fs24 Copyright \'a9 }{\dbch\af3\loch\f3\fs24 2024 }{\dbch\af3\loch\f3\fs24 Pearson Education, Inc. All Rights Reserved\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Motivations }{\dbch\af1\loch\f1\fs40\cf1 (1 of 2)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs32 Thus far, you have used one-dimensional arrays to model linear collections of elements. You can use a two-dimensional array to represent a matrix or a table. For example, the following table that describes the distances between the cities can be represented using a two-dimensional array.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1\qc {\dbch\af1\loch\f1\fs32 Distance Table (in miles)\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Motivations }{\dbch\af1\loch\f1\fs40\cf1 (2 of 2)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 Declare/Create Two-Dimensional Arrays\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs44 // Declare array ref var\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs44 dataType[][] refVar;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs44 // Create array and assign its reference to variable\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs44 refVar = new dataType[10][10];\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs44 // Combine declaration and creation in one statement\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs44 dataType[][] refVar = new dataType[10][10];\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs44 // Alternative syntax\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs44 dataType refVar[][] = new dataType[10][10];\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs56\cf1 Declaring Variables of Two-Dimensional Arrays and Creating Two-Dimensional Arrays\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs40 int[][] matrix = new int[10][10];\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f1\fs40 or\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs40 int matrix[][] = new int[10][10];\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs40 matrix[0][0] = 3;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs40 for (int i = 0; i < matrix.length; i++)\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567 {\b\dbch\af1\loch\f4\fs40 for (int j = 0; j < matrix[i].length; j++)\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li850 {\b\dbch\af1\loch\f4\fs40 matrix[i][j] = (int)(Math.random() * 1000);\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs40 double[][] x;\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Two-Dimensional Array Illustration\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs36 matrix.length? 5\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs36 matrix[0].length? 5\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs36 array.length? 4\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs36 array[0].length? 3\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 Declaring, Creating, and Initializing Using Shorthand Notations\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 Lengths of Two-Dimensional Arrays }{\dbch\af1\loch\f1\fs40\cf1 (1 of 2)\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs48 int[][] x = new int[3][4];\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 Lengths of Two-Dimensional Arrays }{\dbch\af1\loch\f1\fs40\cf1 (2 of 2)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs44 int[][] array = \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs44 \'7b1, 2, 3\'7d,\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs44 \'7b4, 5, 6\'7d,\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs44 \'7b7, 8, 9\'7d,\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs44 \'7b10, 11, 12\'7d\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs44 \'7d;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs44 array.length\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs44 array[0].length\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs44 array[1].length\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs44 array[2].length\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs44 array[3].length\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs44 array[4].length\tab ArrayIndexOutOfBoundsException\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Ragged Arrays }{\dbch\af1\loch\f1\fs40\cf1 (1 of 2)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs40 Each row in a two-dimensional array is itself an array. So, the rows can have different lengths. Such an array is known as a }{\b\dbch\af1\loch\f1\fs40 ragged array}{\dbch\af1\loch\f1\fs40 . For example,\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs40 int[][] matrix = \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs40 \'7b1, 2, 3, 4, 5\'7d,\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs40 \'7b2, 3, 4, 5\'7d,\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs40 \'7b3, 4, 5\'7d,\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs40 \'7b4, 5\'7d,\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs40 \'7b5\'7d\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs40 \'7d;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1\qc {\dbch\af1\loch\f4\fs40 matrix.length }{\dbch\af1\loch\f1\fs40 is 5\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1\qc {\dbch\af1\loch\f4\fs40 matrix[0].length }{\dbch\af1\loch\f1\fs40 is 5\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1\qc {\dbch\af1\loch\f4\fs40 matrix[1].length }{\dbch\af1\loch\f1\fs40 is 4\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1\qc {\dbch\af1\loch\f4\fs40 matrix[2].length }{\dbch\af1\loch\f1\fs40 is 3\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1\qc {\dbch\af1\loch\f4\fs40 matrix[3].length }{\dbch\af1\loch\f1\fs40 is 2\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1\qc {\dbch\af1\loch\f4\fs40 matrix[4].length }{\dbch\af1\loch\f1\fs40 is 1\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Ragged Arrays }{\dbch\af1\loch\f1\fs40\cf1 (2 of 2)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Processing Two-Dimensional Arrays\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 See the examples in the text.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li680\fi-680 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f1\fs48 (Initializing arrays with input values)\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li680\fi-680 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f1\fs48 (Printing arrays)\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li680\fi-680 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f1\fs48 (Summing all elements)\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li680\fi-680 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f1\fs48 (Summing all elements by column)\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li680\fi-680 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f1\fs48 (Which row has the largest sum)\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li680\fi-680 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f1\fs48 (Finding the smallest index of the largest element)\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li680\fi-680 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f1\fs48 (}{\b\dbch\af1\loch\f1\fs48 Random shuffling}{\dbch\af1\loch\f1\fs48 )\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Initializing Arrays With Input Values\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs32 java.util.Scanner input = new Scanner(System.in);\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs32 System.out.println("Enter " + matrix.length + " rows and " +\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs32 matrix[0].length + " columns: ");\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs32 for (int row = 0; row < matrix.length; row++) \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs32 for (int column = 0; column < matrix[row].length; column++) \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567 {\dbch\af1\loch\f4\fs32 matrix[row][column] = input.nextInt();\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs32 \'7d\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs32 \'7d\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 Initializing Arrays With Random Values\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs36 for (int row = 0; row < matrix.length; row++) \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs36 for (int column = 0; column < matrix[row].length; column++) \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567 {\dbch\af1\loch\f4\fs36 matrix[row][column] = (int)(Math.random() * 100);\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs36 \'7d\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs36 \'7d\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Printing Arrays\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs36 for (int row = 0; row < matrix.length; row++) \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs36 for (int column = 0; column < matrix[row].length; column++) \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567 {\dbch\af1\loch\f4\fs36 System.out.print(matrix[row][column] + " ");\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs36 \'7d\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs36 System.out.println();\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs36 \'7d\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Summing All Elements\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs36 int total = 0;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs36 for (int row = 0; row < matrix.length; row++) \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs36 for (int column = 0; column < matrix[row].length; column++) \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567 {\dbch\af1\loch\f4\fs36 total += matrix[row][column];\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs36 \'7d\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs36 \'7d\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Summing Elements by }{\b\dbch\af1\loch\f4\fs72\cf1 Column\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs32 for (int column = 0; column < matrix[0].length; column++) \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs32 int total = 0;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs32 for (int row = 0; row < matrix.length; row++)\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567 {\dbch\af1\loch\f4\fs32 total += matrix[row][column];\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs32 System.out.println("Sum for column " + column + " is "\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567 {\dbch\af1\loch\f4\fs32 + total);\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs32 \'7d\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Random Shuffling\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs36 for (int i = 0; i < matrix.length; i++) \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs36 for (int j = 0; j < matrix[i].length; j++) \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567 {\dbch\af1\loch\f4\fs36 int i1 = (int)(Math.random() * matrix.length);\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567 {\dbch\af1\loch\f4\fs36 int j1 = (int)(Math.random() * matrix[i].length);\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567 {\dbch\af1\loch\f4\fs36 // Swap matrix[i][j] with matrix[i1][j1]\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567 {\dbch\af1\loch\f4\fs36 int temp = matrix[i][j];\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567 {\dbch\af1\loch\f4\fs36 matrix[i][j] = matrix[i1][j1];\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567 {\dbch\af1\loch\f4\fs36 matrix[i1][j1] = temp;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs36 \'7d\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs36 \'7d\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Multidimensional Arrays }{\dbch\af1\loch\f1\fs40\cf1 (1 of 2)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Occasionally, you will need to represent n-dimensional data structures. In Java, you can create n-dimensional arrays for any integer n.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 The way to declare two-dimensional array variables and create two-dimensional arrays can be generalized to declare n-dimensional array variables and create n-dimensional arrays for n >= 3.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Multidimensional Arrays }{\dbch\af1\loch\f1\fs40\cf1 (2 of 2)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs32 double[][][] scores = \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs32 \'7b\'7b7.5, 20.5\'7d, \'7b9.0, 22.5\'7d, \'7b15, 33.5\'7d, \'7b13, 21.5\'7d, \'7b15, 2.5\'7d\'7d,\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs32 \'7b\'7b4.5, 21.5\'7d, \'7b9.0, 22.5\'7d, \'7b15, 34.5\'7d, \'7b12, 20.5\'7d, \'7b14, 9.5\'7d\'7d,\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs32 \'7b\'7b6.5, 30.5\'7d, \'7b9.4, 10.5\'7d, \'7b11, 33.5\'7d, \'7b11, 23.5\'7d, \'7b10, 2.5\'7d\'7d,\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs32 \'7b\'7b6.5, 23.5\'7d, \'7b9.4, 32.5\'7d, \'7b13, 34.5\'7d, \'7b11, 20.5\'7d, \'7b16, 7.5\'7d\'7d,\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs32 \'7b\'7b8.5, 26.5\'7d, \'7b9.4, 52.5\'7d, \'7b13, 36.5\'7d, \'7b13, 24.5\'7d, \'7b16, 2.5\'7d\'7d,\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs32 \'7b\'7b9.5, 20.5\'7d, \'7b9.4, 42.5\'7d, \'7b13, 31.5\'7d, \'7b12, 20.5\'7d, \'7b16, 6.5\'7d\'7d\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs32 \'7d;\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Copyright\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li160 {\b\dbch\af1\loch\f1\fs32 This work is protected by United States copyright laws and is provided solely for the use of instructors in teaching their courses and assessing student learning. Dissemination or sale of any part of this work (including on the World Wide Web) will destroy the integrity of the work and is not permitted. The work and materials from it should never be made available to students except by instructors using the accompanying text in their classes. All recipients of this work are expected to abide by these restrictions and to honor the intended pedagogical purposes and the needs of other instructors who rely on these materials.\par 
+}
+}

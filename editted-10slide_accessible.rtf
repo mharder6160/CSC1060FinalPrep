@@ -1,0 +1,219 @@
+{\rtf1\ansi\ansicpg1252
+{\fonttbl
+{\f1\fnil\fcharset0\fprq0 Arial;}
+{\f2\fnil\fcharset0\fprq0 Times New Roman;}
+{\f3\fnil\fcharset0\fprq0 Verdana;}
+{\f4\fnil\fcharset0\fprq0 Courier New;}
+}
+{\colortbl;
+\red0\green127\blue163;
+\red0\green0\blue0;
+\red0\green0\blue255;
+}
+{\stylesheet
+{\s1\loch\af1\dbch\f1\fs32\cf2\lang1033\level1 heading 1;}
+{\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\level2 heading 2;}
+{\s3\li1440\loch\af1\dbch\f1\fs28\cf2\lang1033\level3 heading 3;}
+{\s4\li2160\loch\af1\dbch\f1\fs28\cf2\lang1033\level4 heading 4;}
+{\s5\li2880\loch\af1\dbch\f1\fs28\cf2\lang1033\level5 heading 5;}
+{\s6\li3600\loch\af1\dbch\f1\fs28\cf2\lang1033\level6 heading 6;}
+{\s7\li4320\loch\af1\dbch\f1\fs28\cf2\lang1033\level7 heading 7;}
+{\s8\li5040\loch\af1\dbch\f1\fs28\cf2\lang1033\level8 heading 8;}
+{\s9\li5760\loch\af1\dbch\f1\fs28\cf2\lang1033\level9 heading 9;}
+}
+\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs60\cf1 Introduction to Java Programming and Data Structures\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li0 {\dbch\af1\loch\f1\fs40\cf1 Thirteenth Edition\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li0\qc {\b\dbch\af1\loch\f1\fs60 Chapter 10\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li0\qc {\dbch\af1\loch\f1\fs44 Thinking in Objects\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li0\qr {\dbch\af3\loch\f3\fs24 Copyright \'a9 }{\dbch\af3\loch\f3\fs24 2024 }{\dbch\af3\loch\f3\fs24 Pearson Education, Inc. All Rights Reserved\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Motivations\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 You see the advantages of object-oriented programming from the preceding chapter. This chapter will demonstrate how to solve problems using the object-oriented paradigm.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs60\cf1 Class }{\b\dbch\af1\loch\f4\fs60\cf1 Abstraction}{\b\dbch\af1\loch\f1\fs60\cf1  and }{\b\dbch\af1\loch\f4\fs60\cf1 Encapsulation\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Class abstraction means to separate class implementation from the use of the class. The creator of the class provides a description of the class and let the user know how the class can be used. The user of the class does not need to know how the class is implemented. The detail of implementation is encapsulated and hidden from the user.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Designing the }{\b\dbch\af1\loch\f4\fs72\cf1 Loan}{\b\dbch\af1\loch\f1\fs72\cf1  Class\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs48 Loan}{\ul\dbch\af1\loch\f1\fs48 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs48 TestLoanClass}{\ul\dbch\af1\loch\f1\fs48 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Object-Oriented Thinking\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Chapters 1-8 introduced fundamental programming techniques for problem solving using loops, methods, and arrays. The studies of these techniques lay a solid foundation for object-oriented programming. Classes provide more flexibility and modularity for building reusable software. This section improves the solution for a problem introduced in Chapter 3 using the object-oriented approach. From the improvements, you will gain the insight on the differences between the procedural programming and object-oriented programming and see the benefits of developing reusable code using objects and classes.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 The }{\b\dbch\af1\loch\f4\fs72\cf1 BMI}{\b\dbch\af1\loch\f1\fs72\cf1  Class\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs48 BMI}{\ul\dbch\af1\loch\f1\fs48 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs48 UseBMIClass}{\ul\dbch\af1\loch\f1\fs48 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Class Relationships\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs40 Association\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs40 Aggregation\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs40 Composition\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs40 Inheritance (Chapter 13)\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs40 Association: is a general binary relationship that describes an activity between two classes.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Object Composition\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Composition is actually a special case of the aggregation relationship. Aggregation models }{\b\dbch\af1\loch\f4\fs48 has-a}{\dbch\af1\loch\f1\fs48  relationships and represents an ownership relationship between two objects. The owner object is called an }{\b\dbch\af1\loch\f4\fs48 aggregating object}{\dbch\af1\loch\f4\fs48  }{\dbch\af1\loch\f1\fs48 and its class an }{\b\dbch\af1\loch\f4\fs48 aggregating class}{\dbch\af1\loch\f1\fs48 . The subject object is called an }{\b\dbch\af1\loch\f4\fs48 aggregated object }{\dbch\af1\loch\f1\fs48 and its class an }{\b\dbch\af1\loch\f4\fs48 aggregated class}{\dbch\af1\loch\f1\fs48 .\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Class Representation\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 An aggregation relationship is usually represented as a data field in the aggregating class. For example, the relationship in Figure 10.6 can be represented as follows:\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Aggregation or Composition\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Since aggregation and composition relationships are represented using classes in similar ways, many texts don\'92t differentiate them and call both compositions.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 Aggregation Between Same Class }{\dbch\af1\loch\f1\fs40\cf1 (1 of 2)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs44 Aggregation may exist between objects of the same class. For example, a person may have a supervisor.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs44 public class }{\dbch\af1\loch\f4\fs44 Person \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs44 // The type for the data is the class itself\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\b\dbch\af1\loch\f4\fs44 private}{\dbch\af1\loch\f4\fs44  Person supervisor;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs44 ...\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs44 \'7d\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 Aggregation Between Same Class }{\dbch\af1\loch\f1\fs40\cf1 (2 of 2)}{\dbch\af1\loch\f1\fs64\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 What happens if a person has several supervisors?\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Example: The }{\b\dbch\af1\loch\f4\fs72\cf1 Course}{\b\dbch\af1\loch\f1\fs72\cf1  Class\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs48 Course}{\ul\dbch\af1\loch\f1\fs48 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs48 TestCourse}{\ul\dbch\af1\loch\f1\fs48 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 Example: The }{\b\dbch\af1\loch\f4\fs64\cf1 Stackofintegers}{\b\dbch\af1\loch\f1\fs64\cf1  Class\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs48 TestStackOfIntegers}{\ul\dbch\af1\loch\f1\fs48 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 Designing the }{\b\dbch\af1\loch\f4\fs64\cf1 Stackofintegers}{\b\dbch\af1\loch\f1\fs64\cf1  Class\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 Implementing }{\b\dbch\af1\loch\f4\fs64\cf1 Stackofintegers}{\b\dbch\af1\loch\f1\fs64\cf1  Class\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs48 StackOfIntegers}{\ul\dbch\af1\loch\f1\fs48 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Wrapper Classes\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f4\fs48 Boolean\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f4\fs48 Character\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f4\fs48 Short\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f4\fs48 Byte\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f4\fs48 Integer\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f4\fs48 Long\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f4\fs48 Float\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f4\fs48 Double\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f1\fs48 Note: }{\dbch\af1\loch\f1\fs48 (1) The wrapper classes do not have no-}{\dbch\af1\loch\f1\fs48 arg}{\dbch\af1\loch\f1\fs48  constructors. (2) The instances of all wrapper classes are immutable, i.e., their internal values cannot be changed once the objects are created.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 The }{\b\dbch\af1\loch\f4\fs72\cf1 Integer}{\b\dbch\af1\loch\f1\fs72\cf1  and }{\b\dbch\af1\loch\f4\fs72\cf1 Double}{\b\dbch\af1\loch\f1\fs72\cf1  Classes\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 The }{\b\dbch\af1\loch\f4\fs64\cf1 Integer}{\b\dbch\af1\loch\f1\fs64\cf1  Class and the }{\b\dbch\af1\loch\f4\fs64\cf1 Double}{\b\dbch\af1\loch\f1\fs64\cf1  Class\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f1\fs48 Constructors\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f1\fs48 Class Constants }{\dbch\af1\loch\f4\fs48 MAX_VALUE}{\dbch\af1\loch\f1\fs48 , }{\dbch\af1\loch\f4\fs48 MIN_VALUE\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f1\fs48 Conversion Methods\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 Numeric Wrapper Class Constructors\par 
+}\pard\plain\ltrpar\s3\li1440\loch\af1\dbch\f1\fs28\cf2\lang1033\li768 {\dbch\af1\loch\f1\fs48 You can construct a wrapper object either from a primitive data type value or from a string representing the numeric value. The constructors for }{\dbch\af1\loch\f4\fs48 Integer}{\dbch\af1\loch\f1\fs48  and }{\dbch\af1\loch\f4\fs48 Double}{\dbch\af1\loch\f1\fs48  are:\par 
+}\pard\plain\ltrpar\s3\li1440\loch\af1\dbch\f1\fs28\cf2\lang1033\li1169 {\dbch\af1\loch\f4\fs48 public Integer(int value)\par 
+}\pard\plain\ltrpar\s3\li1440\loch\af1\dbch\f1\fs28\cf2\lang1033\li1169 {\dbch\af1\loch\f4\fs48 public Integer(String s)\par 
+}\pard\plain\ltrpar\s3\li1440\loch\af1\dbch\f1\fs28\cf2\lang1033\li1169 {\dbch\af1\loch\f4\fs48 public Double(double value)\par 
+}\pard\plain\ltrpar\s3\li1440\loch\af1\dbch\f1\fs28\cf2\lang1033\li1169 {\dbch\af1\loch\f4\fs48 public Double(String s)\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Numeric Wrapper Class Constants\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Each numerical wrapper class has the constants }{\b\dbch\af1\loch\f4\fs48 MAX_VALUE}{\dbch\af1\loch\f1\fs48  and }{\b\dbch\af1\loch\f4\fs48 MIN_VALUE}{\dbch\af1\loch\f4\fs48 . }{\b\dbch\af1\loch\f4\fs48 MAX_VALUE}{\dbch\af1\loch\f4\fs48  }{\dbch\af1\loch\f1\fs48 represents the maximum value of the corresponding primitive data type. For }{\b\dbch\af1\loch\f4\fs48 Byte}{\dbch\af1\loch\f1\fs48 , }{\b\dbch\af1\loch\f4\fs48 Short}{\dbch\af1\loch\f1\fs48 , }{\b\dbch\af1\loch\f4\fs48 Integer}{\dbch\af1\loch\f1\fs48 , and }{\b\dbch\af1\loch\f4\fs48 Long}{\dbch\af1\loch\f1\fs48 , }{\b\dbch\af1\loch\f4\fs48 MIN_VALUE}{\dbch\af1\loch\f1\fs48  represents the minimum }{\b\dbch\af1\loch\f4\fs48 byte}{\dbch\af1\loch\f1\fs48 , }{\b\dbch\af1\loch\f4\fs48 short}{\dbch\af1\loch\f1\fs48 , }{\b\dbch\af1\loch\f4\fs48 int}{\dbch\af1\loch\f1\fs48 , and }{\b\dbch\af1\loch\f4\fs48 long}{\dbch\af1\loch\f1\fs48  values. For }{\b\dbch\af1\loch\f4\fs48 Float}{\dbch\af1\loch\f1\fs48  and }{\b\dbch\af1\loch\f4\fs48 Double}{\dbch\af1\loch\f1\fs48 , }{\b\dbch\af1\loch\f4\fs48 MIN_VALUE}{\dbch\af1\loch\f1\fs48  represents the minimum }{\b\dbch\af1\loch\f1\fs48 positive}{\dbch\af1\loch\f1\fs48  }{\b\dbch\af1\loch\f4\fs48 float}{\dbch\af1\loch\f1\fs48  and }{\b\dbch\af1\loch\f4\fs48 double}{\dbch\af1\loch\f1\fs48  values. The following statements display the maximum integer (2,147,483,647), the minimum positive float (1.4E-45), and the maximum double floating-point number (1.79769313486231570e+308d).\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Conversion Methods\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Each numeric wrapper class implements the abstract methods }{\b\dbch\af1\loch\f4\fs48 doubleValue}{\dbch\af1\loch\f1\fs48 , }{\b\dbch\af1\loch\f4\fs48 floatValue}{\dbch\af1\loch\f1\fs48 , }{\b\dbch\af1\loch\f4\fs48 intValue}{\dbch\af1\loch\f1\fs48 , }{\b\dbch\af1\loch\f4\fs48 longValue}{\dbch\af1\loch\f1\fs48 , and }{\b\dbch\af1\loch\f4\fs48 shortValue}{\dbch\af1\loch\f1\fs48 , which are defined in the }{\b\dbch\af1\loch\f4\fs48 Number}{\dbch\af1\loch\f1\fs48  class. These methods \'93convert\'94 objects into primitive type values.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 The Static }{\b\dbch\af1\loch\f4\fs72\cf1 valueof}{\b\dbch\af1\loch\f1\fs72\cf1  Methods\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs44 The numeric wrapper classes have a useful class method, }{\dbch\af1\loch\f4\fs44 valueOf(String s)}{\dbch\af1\loch\f1\fs44 . This method creates a new object initialized to the value represented by the specified string. For example:\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403 {\dbch\af1\loch\f4\fs44 Double doubleObject = Double.valueOf("12.4");\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403 {\dbch\af1\loch\f4\fs44 Integer integerObject = Integer.valueOf("12");\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 The Methods for Parsing Strings Into Numbers\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 You have used the }{\dbch\af1\loch\f4\fs48 parseInt}{\dbch\af1\loch\f1\fs48  method in the Integer class to parse a numeric string into an int value and the }{\dbch\af1\loch\f4\fs48 parseDouble}{\dbch\af1\loch\f1\fs48  method in the Double class to parse a numeric string into a double value. Each numeric wrapper class has two overloaded parsing methods to parse a numeric string into an appropriate numeric value.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 Automatic Conversion Between Primitive Types and Wrapper Class Types\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 J}{\dbch\af1\loch\f1\fs2  }{\dbch\af1\loch\f1\fs48 D}{\dbch\af1\loch\f1\fs2  }{\dbch\af1\loch\f1\fs48 K 1.5 allows primitive type and wrapper classes to be converted automatically. For example, the following statement in (a) can be simplified as in (b):\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f4\fs72\cf1 Biginteger}{\b\dbch\af1\loch\f1\fs72\cf1  and }{\b\dbch\af1\loch\f4\fs72\cf1 Bigdecimal}{\b\dbch\af1\loch\f1\fs72\cf1  }{\dbch\af1\loch\f1\fs40\cf1 (1 of 2)\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 If you need to compute with very large integers or high precision floating-point values, you can use the }{\b\dbch\af1\loch\f4\fs48 BigInteger}{\dbch\af1\loch\f1\fs48  and }{\b\dbch\af1\loch\f4\fs48 BigDecimal}{\b\dbch\af1\loch\f1\fs48  }{\dbch\af1\loch\f1\fs48 classes in the }{\b\dbch\af1\loch\f4\fs48 java.math}{\dbch\af1\loch\f4\fs48  }{\dbch\af1\loch\f1\fs48 package. Both are }{\b\dbch\af1\loch\f4\fs48 immutable}{\dbch\af1\loch\f1\fs48 . Both extend the }{\b\dbch\af1\loch\f4\fs48 Number}{\dbch\af1\loch\f1\fs48  class and implement the }{\b\dbch\af1\loch\f4\fs48 Comparable}{\dbch\af1\loch\f1\fs48  interface.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f4\fs72\cf1 Biginteger}{\b\dbch\af1\loch\f1\fs72\cf1  and }{\b\dbch\af1\loch\f4\fs72\cf1 Bigdecimal}{\b\dbch\af1\loch\f1\fs72\cf1  }{\dbch\af1\loch\f1\fs40\cf1 (2 of 2)\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs36 BigInteger a = }{\b\dbch\af1\loch\f4\fs36 new}{\dbch\af1\loch\f4\fs36  BigInteger("9223372036854775807");\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs36 BigInteger b = }{\b\dbch\af1\loch\f4\fs36 new}{\dbch\af1\loch\f4\fs36  BigInteger("2");\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs36 BigInteger c = a.multiply(b); // 9223372036854775807 * 2\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs36 System.out.println(c);\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs36 BigDecimal a = }{\b\dbch\af1\loch\f4\fs36 new}{\dbch\af1\loch\f4\fs36  BigDecimal(1.0);\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs36 BigDecimal b = }{\b\dbch\af1\loch\f4\fs36 new}{\dbch\af1\loch\f4\fs36  BigDecimal(3);\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs36 BigDecimal c = a.divide(b, 20, BigDecimal.ROUND_UP);\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs36 System.out.println(c);\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs36 LargeFactorial}{\ul\dbch\af1\loch\f1\fs36 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 The }{\b\dbch\af1\loch\f4\fs72\cf1 String}{\b\dbch\af1\loch\f1\fs72\cf1  Class\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs36 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs36{\pntxtb \'95}}{\dbch\af1\loch\f1\fs36 Constructing a }{\dbch\af1\loch\f4\fs36 String}{\dbch\af1\loch\f1\fs36 :\par 
+}\pard\plain\ltrpar\s3\li1440\loch\af1\dbch\f1\fs28\cf2\lang1033\li403 {\dbch\af1\loch\f4\fs36 String message = "Welcome to Java\'93;\par 
+}\pard\plain\ltrpar\s3\li1440\loch\af1\dbch\f1\fs28\cf2\lang1033\li403 {\dbch\af1\loch\f4\fs36 String message = new String("Welcome to Java\'93);\par 
+}\pard\plain\ltrpar\s3\li1440\loch\af1\dbch\f1\fs28\cf2\lang1033\li403 {\dbch\af1\loch\f4\fs36 String s = new String();}{\dbch\af1\loch\f1\fs36 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs36 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs36{\pntxtb \'95}}{\dbch\af1\loch\f1\fs36 Obtaining }{\dbch\af1\loch\f1\fs36 String}{\dbch\af1\loch\f1\fs36  length and Retrieving Individual Characters in a }{\dbch\af1\loch\f1\fs36 string\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs36 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs36{\pntxtb \'95}}{\dbch\af1\loch\f1\fs36 String}{\dbch\af1\loch\f1\fs36  Concatenation (concat)\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs36 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs36{\pntxtb \'95}}{\dbch\af1\loch\f1\fs36 Substrings (}{\dbch\af1\loch\f4\fs36 substring(index), substring(start, end)}{\dbch\af1\loch\f1\fs36 )\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs36 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs36{\pntxtb \'95}}{\dbch\af1\loch\f1\fs36 Comparisons (equals, compareTo)\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs36 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs36{\pntxtb \'95}}{\dbch\af1\loch\f1\fs36 String}{\dbch\af1\loch\f1\fs36  Conversions\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs36 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs36{\pntxtb \'95}}{\dbch\af1\loch\f1\fs36 Finding a }{\dbch\af1\loch\f4\fs36 Character}{\dbch\af1\loch\f1\fs36  or a }{\dbch\af1\loch\f4\fs36 Substring}{\dbch\af1\loch\f1\fs36  in a }{\dbch\af1\loch\f4\fs36 String\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs36 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs36{\pntxtb \'95}}{\dbch\af1\loch\f1\fs36 Conversions between }{\dbch\af1\loch\f1\fs36 Strings}{\dbch\af1\loch\f1\fs36  and }{\dbch\af1\loch\f1\fs36 Arrays\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs36 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs36{\pntxtb \'95}}{\dbch\af1\loch\f1\fs36 Converting Characters and Numeric Values to }{\dbch\af1\loch\f1\fs36 Strings\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Constructing }{\b\dbch\af1\loch\f1\fs72\cf1 Strings\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs44 String newString = new String(stringLiteral);\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs44 String message = new String("Welcome to Java");\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs44 Since }{\dbch\af1\loch\f1\fs44 strings}{\dbch\af1\loch\f1\fs44  are used frequently, Java provides a shorthand initializer for creating a }{\dbch\af1\loch\f1\fs44 string}{\dbch\af1\loch\f1\fs44 :\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs44 String message = "Welcome to Java";\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Strings}{\b\dbch\af1\loch\f1\fs72\cf1  Are Immutable\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 A }{\dbch\af1\loch\f1\fs48 String}{\dbch\af1\loch\f1\fs48  object is immutable; its contents cannot be changed. Does the following code change the contents of the }{\dbch\af1\loch\f1\fs48 string}{\dbch\af1\loch\f1\fs48 ?\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403 {\dbch\af1\loch\f4\fs48 String s = "Java";\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403 {\dbch\af1\loch\f4\fs48 s = "HTML";\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace Code }{\dbch\af1\loch\f1\fs40\cf1 (1 of 5)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace Code }{\dbch\af1\loch\f1\fs40\cf1 (2 of 5)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Interned Strings\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Since strings are immutable and are frequently used, to improve efficiency and save memory, the J}{\dbch\af1\loch\f1\fs2  }{\dbch\af1\loch\f1\fs48 V}{\dbch\af1\loch\f1\fs2  }{\dbch\af1\loch\f1\fs48 M uses a unique instance for string literals with the same character sequence. Such an instance is called }{\b\dbch\af1\loch\f1\fs48 interned}{\dbch\af1\loch\f1\fs48 . For example, the following statements:\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Examples }{\dbch\af1\loch\f1\fs40\cf1 (1 of 4)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs40 display\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403 {\dbch\af1\loch\f4\fs40 s1 == s is false\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403 {\dbch\af1\loch\f4\fs40 s1 == s3 is true\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs40 A new object is created if you use the new operator.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs40 If you use the }{\dbch\af1\loch\f1\fs40 string}{\dbch\af1\loch\f1\fs40  initializer, no new object is created if the interned object is already created.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace Code }{\dbch\af1\loch\f1\fs40\cf1 (3 of 5)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace Code }{\dbch\af1\loch\f1\fs40\cf1 (4 of 5)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace Code }{\dbch\af1\loch\f1\fs40\cf1 (5 of 5)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Replacing and Splitting Strings }{\dbch\af1\loch\f1\fs40\cf1 (1 of 2)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Examples }{\dbch\af1\loch\f1\fs40\cf1 (2 of 4)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs36 "Welcome".replace('e', 'A') returns a new string, WAlcomA.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs36 "Welcome".replaceFirst("e", "AB") returns a new string, WABlcome.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs36 "Welcome".replace("e", "AB") returns a new string, WABlcomAB.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs36 "Welcome".replace("}{\dbch\af1\loch\f4\fs36 el}{\dbch\af1\loch\f4\fs36 ", "AB") returns a new string, WABcome.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Splitting a }{\b\dbch\af1\loch\f1\fs72\cf1 String\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs48 String[] tokens = "Java#HTML#Perl".split("#", 0);\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs48 for (int }{\b\dbch\af1\loch\f4\fs48 i}{\b\dbch\af1\loch\f4\fs48  = 0; }{\b\dbch\af1\loch\f4\fs48 i}{\b\dbch\af1\loch\f4\fs48  < tokens.length; }{\b\dbch\af1\loch\f4\fs48 i}{\b\dbch\af1\loch\f4\fs48 ++)\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567 {\b\dbch\af1\loch\f4\fs48 System.out.print(tokens[}{\b\dbch\af1\loch\f4\fs48 i}{\b\dbch\af1\loch\f4\fs48 ] + " ");\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 displays\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Java H}{\dbch\af1\loch\f1\fs2  }{\dbch\af1\loch\f1\fs48 T}{\dbch\af1\loch\f1\fs2  }{\dbch\af1\loch\f1\fs48 M}{\dbch\af1\loch\f1\fs2  }{\dbch\af1\loch\f1\fs48 L Perl\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 Matching, Replacing and Splitting by Patterns }{\dbch\af1\loch\f1\fs40\cf1 (1 of 3)\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 You can match, replace, or split a string by specifying a pattern. This is an extremely useful and powerful feature, commonly known as }{\b\dbch\af1\loch\f1\fs48 regular expression}{\dbch\af1\loch\f1\fs48 . Regular expression is complex to beginning students. For this reason, two simple patterns are used in this section. Please\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 refer to Supplement\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 \'93Regular Expressions,\'94 for\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 further studies.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs48 "Java".matches("Java");\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs48 "Java".equals("Java");\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs48 "Java is fun".matches("Java.*");\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs48 "Java is cool".matches("Java.*");\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 Matching, Replacing and Splitting by Patterns }{\dbch\af1\loch\f1\fs40\cf1 (2 of 3)}{\dbch\af1\loch\f1\fs64\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs44 The }{\dbch\af1\loch\f4\fs44 replaceAll}{\dbch\af1\loch\f1\fs44 , }{\dbch\af1\loch\f4\fs44 replaceFirst}{\dbch\af1\loch\f1\fs44 , and split methods can be used with a regular expression. For example, the following statement returns a new }{\dbch\af1\loch\f1\fs44 string}{\dbch\af1\loch\f1\fs44  that replaces }{\dbch\af1\loch\f4\fs44 $, +,}{\dbch\af1\loch\f1\fs44  or }{\dbch\af1\loch\f4\fs44 #}{\dbch\af1\loch\f1\fs44  in }{\dbch\af1\loch\f4\fs44 "}{\dbch\af1\loch\f4\fs44 a+b}{\dbch\af1\loch\f4\fs44 $#c" }{\dbch\af1\loch\f1\fs44 by the }{\dbch\af1\loch\f1\fs44 string}{\dbch\af1\loch\f1\fs44  }{\dbch\af1\loch\f4\fs44 NNN}{\dbch\af1\loch\f1\fs44 .\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs44 String s = "}{\dbch\af1\loch\f4\fs44 a+b}{\dbch\af1\loch\f4\fs44 $#c".replaceAll("[$+#]", "NNN");\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs44 System.out.println(s);\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs44 Here the regular expression [}{\dbch\af1\loch\f4\fs44 $+#}{\dbch\af1\loch\f1\fs44 ] specifies a pattern that matches }{\dbch\af1\loch\f4\fs44 $, +,}{\dbch\af1\loch\f1\fs44  or }{\dbch\af1\loch\f4\fs44 #}{\dbch\af1\loch\f1\fs44 . So, the output is }{\dbch\af1\loch\f4\fs44 aNNNbNNNNNNc}{\dbch\af1\loch\f1\fs44 .\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 Matching, Replacing and Splitting by Patterns }{\dbch\af1\loch\f1\fs40\cf1 (3 of 3)}{\dbch\af1\loch\f1\fs64\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs40 The following statement }{\dbch\af1\loch\f1\fs40 splits}{\dbch\af1\loch\f1\fs40  the }{\dbch\af1\loch\f1\fs40 string}{\dbch\af1\loch\f1\fs40  into an array of }{\dbch\af1\loch\f1\fs40 strings}{\dbch\af1\loch\f1\fs40  delimited by some punctuation marks.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs40 String[] tokens = "Java,C?C#,C++".split("[.,:;?]");\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs40 for (int }{\dbch\af1\loch\f4\fs40 i}{\dbch\af1\loch\f4\fs40  = 0; }{\dbch\af1\loch\f4\fs40 i}{\dbch\af1\loch\f4\fs40  < tokens.length; }{\dbch\af1\loch\f4\fs40 i}{\dbch\af1\loch\f4\fs40 ++)\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs40 System.out.println(tokens[}{\dbch\af1\loch\f4\fs40 i}{\dbch\af1\loch\f4\fs40 ]);\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 Convert Character and Numbers to Strings\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 The String class provides several static }{\dbch\af1\loch\f4\fs48 valueOf}{\dbch\af1\loch\f1\fs48  methods for converting a character, an array of characters, and numeric values to strings. These methods have the same name }{\dbch\af1\loch\f4\fs48 valueOf}{\dbch\af1\loch\f1\fs48  with different argument types }{\dbch\af1\loch\f4\fs48 char}{\dbch\af1\loch\f1\fs48 , }{\dbch\af1\loch\f4\fs48 char[]}{\dbch\af1\loch\f1\fs48 , }{\dbch\af1\loch\f4\fs48 double}{\dbch\af1\loch\f1\fs48 , }{\dbch\af1\loch\f4\fs48 long}{\dbch\af1\loch\f1\fs48 , }{\dbch\af1\loch\f4\fs48 int}{\dbch\af1\loch\f1\fs48 , and }{\dbch\af1\loch\f4\fs48 float}{\dbch\af1\loch\f1\fs48 . For example, to convert a double value to a string, use }{\dbch\af1\loch\f4\fs48 String.valueOf(5.44)}{\dbch\af1\loch\f1\fs48 . The return value is string consists of characters }{\dbch\af1\loch\f4\fs48 \'915\'92, \'91.\'92, \'914\'92,}{\dbch\af1\loch\f1\fs48  and }{\dbch\af1\loch\f4\fs48 \'914\'92}{\dbch\af1\loch\f1\fs48 .\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f4\fs68\cf1 StringBuilder }{\b\dbch\af1\loch\f1\fs68\cf1 and}{\b\dbch\af1\loch\f4\fs68\cf1  }{\b\dbch\af1\loch\f4\fs68\cf1 StringBuffer}{\b\dbch\af1\loch\f4\fs68\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 The }{\dbch\af1\loch\f4\fs48 StringBuilder/StringBuffer}{\dbch\af1\loch\f1\fs48  class is an alternative to the }{\dbch\af1\loch\f4\fs48 String}{\dbch\af1\loch\f1\fs48  class. In general, a }{\dbch\af1\loch\f4\fs48 StringBuilder/StringBuffer }{\dbch\af1\loch\f1\fs48 can be used wherever a }{\dbch\af1\loch\f4\fs48 string}{\dbch\af1\loch\f1\fs48  is used. }{\dbch\af1\loch\f4\fs48 StringBuilder/StringBuffer }{\dbch\af1\loch\f1\fs48 is more flexible than }{\dbch\af1\loch\f1\fs48 String}{\dbch\af1\loch\f1\fs48 . You can add, insert, or append new contents into a string }{\dbch\af1\loch\f1\fs48 buffer}{\dbch\af1\loch\f1\fs48 , whereas the value of a }{\dbch\af1\loch\f1\fs48 String}{\dbch\af1\loch\f1\fs48  object is fixed once the }{\dbch\af1\loch\f1\fs48 string}{\dbch\af1\loch\f1\fs48  is created.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f4\fs72\cf1 StringBuilder }{\b\dbch\af1\loch\f1\fs72\cf1 Constructors}{\b\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Modifying Strings in the Builder\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Examples }{\dbch\af1\loch\f1\fs40\cf1 (3 of 4)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs36 stringBuilder.append("Java");\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs36 stringBuilder.insert(11, "HTML and ");\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs36 stringBuilder.delete(8, 11) changes the builder to Welcome Java.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs36 stringBuilder.deleteCharAt(8) changes the builder to \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs36 Welcome o Java.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs36 stringBuilder.reverse() changes the builder to }{\dbch\af1\loch\f4\fs36 avaJ}{\dbch\af1\loch\f4\fs36  }{\dbch\af1\loch\f4\fs36 ot}{\dbch\af1\loch\f4\fs36  }{\dbch\af1\loch\f4\fs36 emocleW}{\dbch\af1\loch\f4\fs36 .\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs36 stringBuilder.replace(11, 15, "HTML")\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs36 changes the builder to Welcome to HTML.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs36 stringBuilder.setCharAt}{\dbch\af1\loch\f4\fs36 (0, 'w') sets the builder to welcome to Java.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 The }{\b\dbch\af1\loch\f4\fs64\cf1 toString}{\b\dbch\af1\loch\f1\fs64\cf1 , }{\b\dbch\af1\loch\f4\fs64\cf1 capacity}{\b\dbch\af1\loch\f1\fs64\cf1 , }{\b\dbch\af1\loch\f4\fs64\cf1 length}{\b\dbch\af1\loch\f1\fs64\cf1 , }{\b\dbch\af1\loch\f4\fs64\cf1 setLength}{\b\dbch\af1\loch\f1\fs64\cf1 , and }{\b\dbch\af1\loch\f4\fs64\cf1 charAt}{\b\dbch\af1\loch\f1\fs64\cf1  Methods\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 Problem: Checking Palindromes Ignoring Non-alphanumeric Characters\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 This example gives a program that counts the number of occurrence of each letter in a string. Assume the letters are not case-sensitive.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs48 PalindromeIgnoreNonAlphanumeric}{\ul\dbch\af1\loch\f1\fs48 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Regular Expressions\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 A }{\b\dbch\af1\loch\f1\fs48 regular expression }{\dbch\af1\loch\f1\fs48 (abbreviated }{\b\dbch\af1\loch\f1\fs48 regex}{\dbch\af1\loch\f1\fs48 ) is a string that describes a pattern for matching a set of strings. Regular expression is a powerful tool for string manipulations. You can use regular expressions for matching, replacing, and splitting strings.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Matching Strings\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs48 "Java".matches("Java");\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs48 "Java".equals("Java");\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs48 "Java is fun".matches("Java.*")\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs48 "Java is cool".matches("Java.*")\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs48 "Java is powerful".matches("Java.*")\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Regular Expression Syntax }{\dbch\af1\loch\f1\fs40\cf1 (1 of 2)\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Regular Expression Syntax }{\dbch\af1\loch\f1\fs40\cf1 (2 of 2)\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Replacing and Splitting Strings }{\dbch\af1\loch\f1\fs40\cf1 (2 of 2)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Examples }{\dbch\af1\loch\f1\fs40\cf1 (4 of 4)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs36 String s = "Java Java Java".replaceAll("v\'5c\'5cw", "}{\dbch\af1\loch\f4\fs36 wi}{\dbch\af1\loch\f4\fs36 ") ;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs36 String s = "Java Java Java".replaceFirst("v\'5c\'5cw", "}{\dbch\af1\loch\f4\fs36 wi}{\dbch\af1\loch\f4\fs36 ") ;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs36 String[] s = "Java1HTML2Perl".split("\'5c\'5cd");\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Copyright\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li160 {\b\dbch\af1\loch\f1\fs32 This work is protected by United States copyright laws and is provided solely for the use of instructors in teaching their courses and assessing student learning. Dissemination or sale of any part of this work (including on the World Wide Web) will destroy the integrity of the work and is not permitted. The work and materials from it should never be made available to students except by instructors using the accompanying text in their classes. All recipients of this work are expected to abide by these restrictions and to honor the intended pedagogical purposes and the needs of other instructors who rely on these materials.\par 
+}
+}

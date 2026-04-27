@@ -1,0 +1,324 @@
+{\rtf1\ansi\ansicpg1252
+{\fonttbl
+{\f1\fnil\fcharset0\fprq0 Arial;}
+{\f2\fnil\fcharset0\fprq0 Times New Roman;}
+{\f3\fnil\fcharset0\fprq0 Verdana;}
+{\f4\fnil\fcharset0\fprq0 Courier New;}
+}
+{\colortbl;
+\red0\green127\blue163;
+\red0\green0\blue0;
+\red0\green0\blue255;
+}
+{\stylesheet
+{\s1\loch\af1\dbch\f1\fs32\cf2\lang1033\level1 heading 1;}
+{\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\level2 heading 2;}
+{\s3\li1440\loch\af1\dbch\f1\fs28\cf2\lang1033\level3 heading 3;}
+{\s4\li2160\loch\af1\dbch\f1\fs28\cf2\lang1033\level4 heading 4;}
+{\s5\li2880\loch\af1\dbch\f1\fs28\cf2\lang1033\level5 heading 5;}
+{\s6\li3600\loch\af1\dbch\f1\fs28\cf2\lang1033\level6 heading 6;}
+{\s7\li4320\loch\af1\dbch\f1\fs28\cf2\lang1033\level7 heading 7;}
+{\s8\li5040\loch\af1\dbch\f1\fs28\cf2\lang1033\level8 heading 8;}
+{\s9\li5760\loch\af1\dbch\f1\fs28\cf2\lang1033\level9 heading 9;}
+}
+\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs60\cf1 Introduction to Java Programming and Data Structures\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li0 {\dbch\af1\loch\f1\fs40\cf1 Thirteenth Edition\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li0\qc {\b\dbch\af1\loch\f1\fs60 Chapter 7\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li0\qc {\dbch\af1\loch\f1\fs44 Single-Dimensional Arrays\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li0\qr {\dbch\af3\loch\f3\fs24 Copyright \'a9 }{\dbch\af3\loch\f3\fs24 2024 }{\dbch\af3\loch\f3\fs24 Pearson Education, Inc. All Rights Reserved\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Opening Problem\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Read one hundred numbers, compute their average, and find out how many numbers are above the average.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Introducing Arrays\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Array is a data structure that represents a collection of the same types of data.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Declaring Array Variables\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f4\fs48 datatype[] arrayRefVar;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403 {\dbch\af1\loch\f1\fs48 Example:\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403 {\dbch\af1\loch\f4\fs48 double[] myList;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f4\fs48 datatype arrayRefVar[]; }{\b\dbch\af1\loch\f1\fs48 // This style is allowed, but not preferred\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403 {\dbch\af1\loch\f1\fs48 Example:\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403 {\dbch\af1\loch\f4\fs48 double myList[];\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Creating Arrays\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs48 arrayRefVar = new datatype[arraySize];\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Example:\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs48 myList = new double[10];\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs48 myList[0] }{\dbch\af1\loch\f1\fs48 references the first element in the array.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs48 myList[9] }{\dbch\af1\loch\f1\fs48 references the last element in the array.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Declaring and Creating in One Step\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f4\fs48 datatype[] arrayRefVar = new datatype[arraySize];\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403 {\dbch\af1\loch\f4\fs48 double[] myList = new double[10];\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f4\fs48 datatype arrayRefVar[] = new datatype[arraySize];\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403 {\dbch\af1\loch\f4\fs48 double myList[] = new double[10];\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 The Length of an Array\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Once an array is created, its size is fixed. It cannot be changed. You can find its size using\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403 {\dbch\af1\loch\f4\fs48 arrayRefVar.length\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 For example,\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403 {\dbch\af1\loch\f4\fs48 myList.length returns 10\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Default Values\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 When an array is created, its elements are assigned the default value of\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403 {\b\dbch\af1\loch\f1\fs48 0}{\dbch\af1\loch\f1\fs48  for the numeric primitive data types,\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403 {\b\dbch\af1\loch\f4\fs48 '\'5cu0000'}{\b\dbch\af1\loch\f1\fs48  }{\dbch\af1\loch\f1\fs48 for }{\b\dbch\af1\loch\f4\fs48 char}{\dbch\af1\loch\f1\fs48  types, and\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403 {\b\dbch\af1\loch\f4\fs48 false}{\dbch\af1\loch\f1\fs48  for }{\b\dbch\af1\loch\f4\fs48 boolean}{\dbch\af1\loch\f1\fs48  types.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Indexed Variables\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 The array elements are accessed through the index. The array indices are }{\b\dbch\af1\loch\f1\fs48 0-based}{\dbch\af1\loch\f1\fs48 , i.e., it starts from 0 to }{\dbch\af1\loch\f4\fs48 arrayRefVar.length-1}{\dbch\af1\loch\f1\fs48 . In the example in Figure 6.1, }{\dbch\af1\loch\f4\fs48 myList}{\dbch\af1\loch\f1\fs48  holds ten double values and the indices are from 0 to 9.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Each element in the array is represented using the following syntax, known as an }{\b\dbch\af1\loch\f1\fs48 indexed variable}{\dbch\af1\loch\f1\fs48 :\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403 {\dbch\af1\loch\f4\fs48 arrayRefVar[index];\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Using Indexed Variables\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 After an array is created, an indexed variable can be used in the same way as a regular variable. For example, the following code adds the value in }{\dbch\af1\loch\f4\fs48 myList[0]}{\dbch\af1\loch\f1\fs48  and }{\dbch\af1\loch\f4\fs48 myList[1]}{\dbch\af1\loch\f1\fs48  to }{\dbch\af1\loch\f4\fs48 myList[2]}{\dbch\af1\loch\f1\fs48 .\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403 {\dbch\af1\loch\f4\fs48 myList[2] = myList[0] + myList[1];\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Array Initializers\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f1\fs48 Declaring, creating, initializing in one step:\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403 {\b\dbch\af1\loch\f4\fs48 double[] myList = \'7b1.9, 2.9, 3.4, 3.5\'7d;}{\dbch\af1\loch\f1\fs48 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 This shorthand syntax must be in one statement.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 Declaring, Creating, Initializing Using the Shorthand Notation\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs48 double[] myList = \'7b1.9, 2.9, 3.4, 3.5\'7d;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 This shorthand notation is equivalent to the following statements:\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs48 double[] myList = new double[4];\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs48 myList[0] = 1.9;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs48 myList[1] = 2.9;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs48 myList[2] = 3.4;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs48 myList[3] = 3.5;\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Caution\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Using the shorthand notation, you have to declare, create, and initialize the array all in one statement. Splitting it would cause a syntax error. For example, the following is wrong:\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs48 double[] myList;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs48 myList = \'7b1.9, 2.9, 3.4, 3.5\'7d;\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace Program With Arrays }{\dbch\af1\loch\f1\fs40\cf1 (1 of 16)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace Program With Arrays }{\dbch\af1\loch\f1\fs40\cf1 (2 of 16)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace Program With Arrays }{\dbch\af1\loch\f1\fs40\cf1 (3 of 16)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace Program With Arrays }{\dbch\af1\loch\f1\fs40\cf1 (4 of 16)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace Program With Arrays }{\dbch\af1\loch\f1\fs40\cf1 (5 of 16)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace Program With Arrays }{\dbch\af1\loch\f1\fs40\cf1 (6 of 16)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace Program With Arrays }{\dbch\af1\loch\f1\fs40\cf1 (7 of 16)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace Program With Arrays }{\dbch\af1\loch\f1\fs40\cf1 (8 of 16)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace Program With Arrays }{\dbch\af1\loch\f1\fs40\cf1 (9 of 16)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace Program With Arrays }{\dbch\af1\loch\f1\fs40\cf1 (10 of 16)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace Program With Arrays }{\dbch\af1\loch\f1\fs40\cf1 (11 of 16)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace Program With Arrays }{\dbch\af1\loch\f1\fs40\cf1 (12 of 16)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace Program With Arrays }{\dbch\af1\loch\f1\fs40\cf1 (13 of 16)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace Program With Arrays }{\dbch\af1\loch\f1\fs40\cf1 (14 of 16)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace Program With Arrays }{\dbch\af1\loch\f1\fs40\cf1 (15 of 16)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace Program With Arrays }{\dbch\af1\loch\f1\fs40\cf1 (16 of 16)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Processing Arrays\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs44 See the examples in the text.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li680\fi-680 {\pntext\pard\dbch\af1\loch\f1\fs44 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs44{\pntxtb \'95}}{\dbch\af1\loch\f1\fs44 (Initializing arrays with input values)\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li680\fi-680 {\pntext\pard\dbch\af1\loch\f1\fs44 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs44{\pntxtb \'95}}{\dbch\af1\loch\f1\fs44 (Initializing arrays with random values)\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li680\fi-680 {\pntext\pard\dbch\af1\loch\f1\fs44 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs44{\pntxtb \'95}}{\dbch\af1\loch\f1\fs44 (Printing arrays)\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li680\fi-680 {\pntext\pard\dbch\af1\loch\f1\fs44 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs44{\pntxtb \'95}}{\dbch\af1\loch\f1\fs44 (Summing all elements)\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li680\fi-680 {\pntext\pard\dbch\af1\loch\f1\fs44 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs44{\pntxtb \'95}}{\dbch\af1\loch\f1\fs44 (Finding the largest element)\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li680\fi-680 {\pntext\pard\dbch\af1\loch\f1\fs44 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs44{\pntxtb \'95}}{\dbch\af1\loch\f1\fs44 (Finding the smallest index of the largest element)\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li680\fi-680 {\pntext\pard\dbch\af1\loch\f1\fs44 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs44{\pntxtb \'95}}{\dbch\af1\loch\f1\fs44 (}{\b\dbch\af1\loch\f1\fs44 Random shuffling}{\dbch\af1\loch\f1\fs44 )\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li680\fi-680 {\pntext\pard\dbch\af1\loch\f1\fs44 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs44{\pntxtb \'95}}{\dbch\af1\loch\f1\fs44 (}{\b\dbch\af1\loch\f1\fs44 Shifting elements}{\dbch\af1\loch\f1\fs44 )\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Initializing Arrays With Input Values\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs36 java.util.Scanner}{\dbch\af1\loch\f4\fs36  input = }{\b\dbch\af1\loch\f4\fs36 new}{\dbch\af1\loch\f4\fs36  }{\dbch\af1\loch\f4\fs36 java.util.Scanner}{\dbch\af1\loch\f4\fs36 (System.in);\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs36 System.out.print}{\dbch\af1\loch\f4\fs36 ("Enter " + }{\dbch\af1\loch\f4\fs36 myList.length}{\dbch\af1\loch\f4\fs36  + " values: ");\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs36 for}{\dbch\af1\loch\f4\fs36  (}{\b\dbch\af1\loch\f4\fs36 int}{\dbch\af1\loch\f4\fs36  }{\dbch\af1\loch\f4\fs36 i}{\dbch\af1\loch\f4\fs36  = 0; }{\dbch\af1\loch\f4\fs36 i}{\dbch\af1\loch\f4\fs36  < }{\dbch\af1\loch\f4\fs36 myList.length}{\dbch\af1\loch\f4\fs36 ; }{\dbch\af1\loch\f4\fs36 i}{\dbch\af1\loch\f4\fs36 ++)\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs36 myList[}{\dbch\af1\loch\f4\fs36 i}{\dbch\af1\loch\f4\fs36 ] = }{\dbch\af1\loch\f4\fs36 input.nextDouble}{\dbch\af1\loch\f4\fs36 ();\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 Initializing Arrays With Random Values\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs48 for}{\dbch\af1\loch\f4\fs48  (}{\b\dbch\af1\loch\f4\fs48 int}{\dbch\af1\loch\f4\fs48  }{\dbch\af1\loch\f4\fs48 i}{\dbch\af1\loch\f4\fs48  = 0; }{\dbch\af1\loch\f4\fs48 i}{\dbch\af1\loch\f4\fs48  < }{\dbch\af1\loch\f4\fs48 myList.length}{\dbch\af1\loch\f4\fs48 ; }{\dbch\af1\loch\f4\fs48 i}{\dbch\af1\loch\f4\fs48 ++) \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs48 myList[}{\dbch\af1\loch\f4\fs48 i}{\dbch\af1\loch\f4\fs48 ] = }{\dbch\af1\loch\f4\fs48 Math.random}{\dbch\af1\loch\f4\fs48 () * 100;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs48 \'7d\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Printing Arrays\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs48 for}{\dbch\af1\loch\f4\fs48  (}{\b\dbch\af1\loch\f4\fs48 int}{\dbch\af1\loch\f4\fs48  }{\dbch\af1\loch\f4\fs48 i}{\dbch\af1\loch\f4\fs48  = 0; }{\dbch\af1\loch\f4\fs48 i}{\dbch\af1\loch\f4\fs48  < }{\dbch\af1\loch\f4\fs48 myList.length}{\dbch\af1\loch\f4\fs48 ; }{\dbch\af1\loch\f4\fs48 i}{\dbch\af1\loch\f4\fs48 ++) \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs48 System.out.print}{\dbch\af1\loch\f4\fs48 (myList[}{\dbch\af1\loch\f4\fs48 i}{\dbch\af1\loch\f4\fs48 ] + " ");\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs48 \'7d\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Summing All Elements\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs48 double total = 0;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs48 for (int }{\dbch\af1\loch\f4\fs48 i}{\dbch\af1\loch\f4\fs48  = 0; }{\dbch\af1\loch\f4\fs48 i}{\dbch\af1\loch\f4\fs48  < }{\dbch\af1\loch\f4\fs48 myList.length}{\dbch\af1\loch\f4\fs48 ; }{\dbch\af1\loch\f4\fs48 i}{\dbch\af1\loch\f4\fs48 ++) \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\dbch\af1\loch\f4\fs48 total += myList[}{\dbch\af1\loch\f4\fs48 i}{\dbch\af1\loch\f4\fs48 ];\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs48 \'7d\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Finding the Largest Element\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs48 double}{\dbch\af1\loch\f4\fs48  max = myList[0];\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs48 for}{\dbch\af1\loch\f4\fs48  (}{\b\dbch\af1\loch\f4\fs48 int}{\dbch\af1\loch\f4\fs48  }{\dbch\af1\loch\f4\fs48 i}{\dbch\af1\loch\f4\fs48  = 1; }{\dbch\af1\loch\f4\fs48 i}{\dbch\af1\loch\f4\fs48  < }{\dbch\af1\loch\f4\fs48 myList.length}{\dbch\af1\loch\f4\fs48 ; }{\dbch\af1\loch\f4\fs48 i}{\dbch\af1\loch\f4\fs48 ++) \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\b\dbch\af1\loch\f4\fs48 if}{\dbch\af1\loch\f4\fs48  (myList[}{\dbch\af1\loch\f4\fs48 i}{\dbch\af1\loch\f4\fs48 ] > max) max = myList[}{\dbch\af1\loch\f4\fs48 i}{\dbch\af1\loch\f4\fs48 ];\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs48 \'7d\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Random Shuffling\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Shifting Elements\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Enhanced }{\b\ul\dbch\af1\loch\f4\fs72\cf1 for}{\b\dbch\af1\loch\f1\fs72\cf1  Loop (}{\b\dbch\af1\loch\f1\fs72\cf1 for}{\b\dbch\af1\loch\f1\fs72\cf1 -each loop)\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs40 J}{\dbch\af1\loch\f1\fs2  }{\dbch\af1\loch\f1\fs40 D}{\dbch\af1\loch\f1\fs2  }{\dbch\af1\loch\f1\fs40 K 1.5 introduced a new for loop that enables you to traverse the complete array sequentially without using an index variable. For example, the following code displays all elements in the array }{\dbch\af1\loch\f4\fs40 myList}{\dbch\af1\loch\f1\fs40 :\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567 {\b\dbch\af1\loch\f4\fs40 for (double value: myList)\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1134 {\b\dbch\af1\loch\f4\fs40 System.out.println}{\b\dbch\af1\loch\f4\fs40 (value);\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs40 In general, the syntax is\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567 {\b\dbch\af1\loch\f4\fs40 for (}{\b\dbch\af1\loch\f4\fs40 elementType}{\b\dbch\af1\loch\f4\fs40  value: arrayRefVar) \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1134 {\b\dbch\af1\loch\f4\fs40 // Process the value\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567 {\b\dbch\af1\loch\f4\fs40 \'7d\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs40 You still have to use an index variable if you wish to traverse the array in a different order or change the elements in the array.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Analyze Numbers\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Read one hundred numbers, compute their average, and find out how many numbers are above the average.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs48 AnalyzeNumbers}{\ul\dbch\af1\loch\f1\fs48 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Problem: Deck of Cards }{\dbch\af1\loch\f1\fs40\cf1 (1 of 4)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 The problem is to write a program that picks four cards randomly from a deck of 52 cards. All the cards can be represented using an array named deck, filled with initial values 0 to 51, as follows:\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567 {\b\dbch\af1\loch\f4\fs48 int[] deck = new int[52];\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567 {\b\dbch\af1\loch\f4\fs48 // Initialize cards\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567 {\b\dbch\af1\loch\f4\fs48 for (int }{\b\dbch\af1\loch\f4\fs48 i}{\b\dbch\af1\loch\f4\fs48  = 0; }{\b\dbch\af1\loch\f4\fs48 i}{\b\dbch\af1\loch\f4\fs48  < }{\b\dbch\af1\loch\f4\fs48 deck.length}{\b\dbch\af1\loch\f4\fs48 ; }{\b\dbch\af1\loch\f4\fs48 i}{\b\dbch\af1\loch\f4\fs48 ++)\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1134 {\b\dbch\af1\loch\f4\fs48 deck[}{\b\dbch\af1\loch\f4\fs48 i}{\b\dbch\af1\loch\f4\fs48 ] = }{\b\dbch\af1\loch\f4\fs48 i}{\b\dbch\af1\loch\f4\fs48 ;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs48 DeckOfCards}{\ul\dbch\af1\loch\f1\fs48 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Problem: Deck of Cards }{\dbch\af1\loch\f1\fs40\cf1 (2 of 4)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Problem: Deck of Cards }{\dbch\af1\loch\f1\fs40\cf1 (3 of 4)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs48 DeckOfCards}{\ul\dbch\af1\loch\f1\fs48 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Problem: Deck of Cards }{\dbch\af1\loch\f1\fs40\cf1 (4 of 4)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs40 This problem builds a foundation for future more interesting and realistic applications:\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs40 See Exercise 20.15.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs40 https://liveexample.pearsoncmg.com/dsanimation/24Point.html}{\dbch\af1\loch\f1\fs40 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Copying Arrays }{\dbch\af1\loch\f1\fs40\cf1 (1 of 2)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Often, in a program, you need to duplicate an array or a part of an array. In such cases you could attempt to use the assignment statement (}{\dbch\af1\loch\f4\fs48 =}{\dbch\af1\loch\f1\fs48 ), as follows:\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f4\fs48 list2 = list1;\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Copying Arrays }{\dbch\af1\loch\f1\fs40\cf1 (2 of 2)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Using a loop:\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs48 int[] }{\b\dbch\af1\loch\f4\fs48 sourceArray}{\b\dbch\af1\loch\f4\fs48  = \'7b2, 3, 1, 5, 10\'7d;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567\fi-567 {\b\dbch\af1\loch\f4\fs48 int[] }{\b\dbch\af1\loch\f4\fs48 targetArray}{\b\dbch\af1\loch\f4\fs48  = new int[}{\b\dbch\af1\loch\f4\fs48 sourceArray.length}{\b\dbch\af1\loch\f4\fs48 ];\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs48 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs48 for (int }{\b\dbch\af1\loch\f4\fs48 i}{\b\dbch\af1\loch\f4\fs48  = 0; }{\b\dbch\af1\loch\f4\fs48 i}{\b\dbch\af1\loch\f4\fs48  < }{\b\dbch\af1\loch\f4\fs48 sourceArrays.length}{\b\dbch\af1\loch\f4\fs48 ; }{\b\dbch\af1\loch\f4\fs48 i}{\b\dbch\af1\loch\f4\fs48 ++)\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1134 {\b\dbch\af1\loch\f4\fs48 targetArray}{\b\dbch\af1\loch\f4\fs48 [}{\b\dbch\af1\loch\f4\fs48 i}{\b\dbch\af1\loch\f4\fs48 ] = }{\b\dbch\af1\loch\f4\fs48 sourceArray}{\b\dbch\af1\loch\f4\fs48 [}{\b\dbch\af1\loch\f4\fs48 i}{\b\dbch\af1\loch\f4\fs48 ];\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 The }{\b\dbch\af1\loch\f4\fs72\cf1 arraycopy}{\b\dbch\af1\loch\f1\fs72\cf1  Utility\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567\fi-567 {\b\dbch\af1\loch\f4\fs48 arraycopy}{\b\dbch\af1\loch\f4\fs48 (}{\b\dbch\af1\loch\f4\fs48 sourceArray}{\b\dbch\af1\loch\f4\fs48 , }{\b\dbch\af1\loch\f4\fs48 src_pos}{\b\dbch\af1\loch\f4\fs48 , }{\b\dbch\af1\loch\f4\fs48 targetArray}{\b\dbch\af1\loch\f4\fs48 , }{\b\dbch\af1\loch\f4\fs48 tar_pos}{\b\dbch\af1\loch\f4\fs48 , length);\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Example:\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li567\fi-567 {\b\dbch\af1\loch\f4\fs48 System.arraycopy}{\b\dbch\af1\loch\f4\fs48 (}{\b\dbch\af1\loch\f4\fs48 sourceArray}{\b\dbch\af1\loch\f4\fs48 , 0, }{\b\dbch\af1\loch\f4\fs48 targetArray}{\b\dbch\af1\loch\f4\fs48 , 0, }{\b\dbch\af1\loch\f4\fs48 sourceArray.length}{\b\dbch\af1\loch\f4\fs48 );\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Passing Arrays to Methods\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Anonymous Array\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs36 The statement\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1134 {\dbch\af1\loch\f4\fs36 printArray(new int[]\'7b3, 1, 2, 6, 4, 2\'7d);\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs36 creates an array using the following syntax:\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1134 {\dbch\af1\loch\f4\fs36 new dataType[]\'7bliteral0, literal1, ..., literalk\'7d;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs36 There is no explicit reference variable for the array. Such array is called an }{\b\dbch\af1\loch\f1\fs36 anonymous array}{\dbch\af1\loch\f1\fs36 .\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Pass by Value\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs44 Java uses }{\b\dbch\af1\loch\f1\fs44 pass by value }{\dbch\af1\loch\f1\fs44 to pass arguments to a method. There are important differences between passing a value of variables of primitive data types and passing arrays.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs44 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs44{\pntxtb \'95}}{\dbch\af1\loch\f1\fs44 For a parameter of a primitive type value, the actual value is passed. Changing the value of the local parameter inside the method does not affect the value of the variable outside the method.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs44 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs44{\pntxtb \'95}}{\dbch\af1\loch\f1\fs44 For a parameter of an array type, the value of the parameter contains a reference to an array; this reference is passed to the method. Any changes to the array that occur inside the method body will affect the original array that was passed as the argument.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Simple Example\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Call Stack }{\dbch\af1\loch\f1\fs40\cf1 (1 of 2)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 When invoking }{\dbch\af1\loch\f4\fs48 m(x, y)}{\dbch\af1\loch\f1\fs48 , the values of }{\dbch\af1\loch\f4\fs48 x}{\dbch\af1\loch\f1\fs48  and }{\dbch\af1\loch\f4\fs48 y}{\dbch\af1\loch\f1\fs48  are passed to number and numbers. Since y contains the reference value to the array, numbers now contains the same reference value to the same array.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Call Stack }{\dbch\af1\loch\f1\fs40\cf1 (2 of 2)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 When invoking }{\dbch\af1\loch\f4\fs48 m(x, y)}{\dbch\af1\loch\f1\fs48 , the values of }{\dbch\af1\loch\f4\fs48 x}{\dbch\af1\loch\f1\fs48  and }{\dbch\af1\loch\f4\fs48 y}{\dbch\af1\loch\f1\fs48  are passed to number and numbers. Since y contains the reference value to the array, numbers now contains the same reference value to the same array.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Heap\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 The J}{\dbch\af1\loch\f1\fs2  }{\dbch\af1\loch\f1\fs48 V}{\dbch\af1\loch\f1\fs2  }{\dbch\af1\loch\f1\fs48 M stores the array in an area of memory, called }{\b\dbch\af1\loch\f1\fs48 heap}{\dbch\af1\loch\f1\fs48 , which is used for dynamic memory allocation where blocks of memory are allocated and freed in an arbitrary order.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Passing Arrays as Arguments\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f1\fs48 Objective: Demonstrate differences of passing primitive data type variables and array variables.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs48 TestPassArray}{\ul\dbch\af1\loch\f1\fs48 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Example\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Returning an Array From a Method\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace the Reverse Method }{\dbch\af1\loch\f1\fs40\cf1 (1 of 22)\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace the Reverse Method }{\dbch\af1\loch\f1\fs40\cf1 (2 of 22)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace the Reverse Method }{\dbch\af1\loch\f1\fs40\cf1 (3 of 22)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace the Reverse Method }{\dbch\af1\loch\f1\fs40\cf1 (4 of 22)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace the Reverse Method }{\dbch\af1\loch\f1\fs40\cf1 (5 of 22)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace the Reverse Method }{\dbch\af1\loch\f1\fs40\cf1 (6 of 22)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace the Reverse Method }{\dbch\af1\loch\f1\fs40\cf1 (7 of 22)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace the Reverse Method }{\dbch\af1\loch\f1\fs40\cf1 (8 of 22)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace the Reverse Method }{\dbch\af1\loch\f1\fs40\cf1 (9 of 22)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace the Reverse Method }{\dbch\af1\loch\f1\fs40\cf1 (10 of 22)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace the Reverse Method }{\dbch\af1\loch\f1\fs40\cf1 (11 of 22)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace the Reverse Method }{\dbch\af1\loch\f1\fs40\cf1 (12 of 22)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace the Reverse Method }{\dbch\af1\loch\f1\fs40\cf1 (13 of 22)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace the Reverse Method }{\dbch\af1\loch\f1\fs40\cf1 (14 of 22)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace the Reverse Method }{\dbch\af1\loch\f1\fs40\cf1 (15 of 22)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace the Reverse Method }{\dbch\af1\loch\f1\fs40\cf1 (16 of 22)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace the Reverse Method }{\dbch\af1\loch\f1\fs40\cf1 (17 of 22)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace the Reverse Method }{\dbch\af1\loch\f1\fs40\cf1 (18 of 22)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace the Reverse Method }{\dbch\af1\loch\f1\fs40\cf1 (19 of 22)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace the Reverse Method }{\dbch\af1\loch\f1\fs40\cf1 (20 of 22)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace the Reverse Method }{\dbch\af1\loch\f1\fs40\cf1 (21 of 22)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Trace the Reverse Method }{\dbch\af1\loch\f1\fs40\cf1 (22 of 22)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 Problem: Counting Occurrence of Each Letter\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f1\fs48 Generate 100 lowercase letters randomly and assign to an array of characters.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f1\fs48 Count the occurrence of each letter in the array.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs48 CountLettersInArray}{\ul\dbch\af1\loch\f1\fs48 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Variable-Length Arguments\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 You can pass a variable number of arguments of the same type to a method.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs48 VarArgsDemo}{\ul\dbch\af1\loch\f1\fs48 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Searching Arrays\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs44 Searching is the process of looking for a specific element in an array; for example, discovering whether a certain score is included in a list of scores. Searching is a common task in computer programming. There are many algorithms and data structures devoted to searching. In this section, two commonly used approaches are discussed, }{\b\dbch\af1\loch\f4\fs44 linear search}{\b\dbch\af1\loch\f1\fs44  }{\dbch\af1\loch\f1\fs44 and }{\b\dbch\af1\loch\f1\fs44 binary search.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Linear Search\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 The linear search approach compares the key element, }{\b\dbch\af1\loch\f4\fs48 key}{\b\dbch\af1\loch\f1\fs48 , sequentially}{\dbch\af1\loch\f1\fs48  with each element in the array }{\b\dbch\af1\loch\f4\fs48 list}{\dbch\af1\loch\f1\fs48 . The method continues to do so until the key matches an element in the list or the list is exhausted without a match being found. If a match is made, the linear search returns the index of the element in the array that matches the key.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 If no match is found, the search returns\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Linear Search Animation }{\dbch\af1\loch\f1\fs40\cf1 (1 of 2)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 From Idea to Solution }{\dbch\af1\loch\f1\fs40\cf1 (1 of 6)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Trace the method\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Binary Search }{\dbch\af1\loch\f1\fs40\cf1 (1 of 6)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 For binary search to work, the elements in the array must already be ordered. Without loss of generality, assume that the array is in ascending order.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 e.g., }{\dbch\af1\loch\f1\fs48 2 4 7 10 11 45 50 59 60 66 69 70 79\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 The binary search first compares the key with the element in the middle of the array.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Binary Search }{\dbch\af1\loch\f1\fs40\cf1 (2 of 6)}{\b\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Consider the following three cases:\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f1\fs48 If the key is less than the middle element, you only need to search the key in the first half of the array.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f1\fs48 If the key is equal to the middle element, the search ends with a match.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f1\fs48 If the key is greater than the middle element, you only need to search the key in the second half of the array.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Binary Search }{\dbch\af1\loch\f1\fs40\cf1 (3 of 6)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Binary Search }{\dbch\af1\loch\f1\fs40\cf1 (4 of 6)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Binary Search }{\dbch\af1\loch\f1\fs40\cf1 (5 of 6)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Binary Search }{\dbch\af1\loch\f1\fs40\cf1 (6 of 6)}{\b\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 -insertion point\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 The }{\dbch\af1\loch\f4\fs48 binarySearch}{\dbch\af1\loch\f1\fs48  method returns the index of the element in the list that matches the search key if it is contained in the list. Otherwise, it returns\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 The insertion point is the point at which the key would be inserted into the list.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 From Idea to Solution }{\dbch\af1\loch\f1\fs40\cf1 (2 of 6)}{\b\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs36 /** Use binary search to find the key in the list */\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs36 public static }{\b\dbch\af1\loch\f4\fs36 int}{\b\dbch\af1\loch\f4\fs36  }{\b\dbch\af1\loch\f4\fs36 binarySearch}{\b\dbch\af1\loch\f4\fs36 (}{\b\dbch\af1\loch\f4\fs36 int}{\b\dbch\af1\loch\f4\fs36 [] list, }{\b\dbch\af1\loch\f4\fs36 int}{\b\dbch\af1\loch\f4\fs36  key) \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\b\dbch\af1\loch\f4\fs36 int}{\b\dbch\af1\loch\f4\fs36  low = 0;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\b\dbch\af1\loch\f4\fs36 int}{\b\dbch\af1\loch\f4\fs36  high = }{\b\dbch\af1\loch\f4\fs36 list.length}{\b\dbch\af1\loch\f4\fs36  - 1;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs36 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\b\dbch\af1\loch\f4\fs36 while (high >= low) \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li850 {\b\dbch\af1\loch\f4\fs36 int}{\b\dbch\af1\loch\f4\fs36  mid = (low + high) / 2;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li850 {\b\dbch\af1\loch\f4\fs36 if (key < list[mid])\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1134 {\b\dbch\af1\loch\f4\fs36 high = mid - 1;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li850 {\b\dbch\af1\loch\f4\fs36 else if (key == list[mid])\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1134 {\b\dbch\af1\loch\f4\fs36 return mid;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li850 {\b\dbch\af1\loch\f4\fs36 else\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1134 {\b\dbch\af1\loch\f4\fs36 low = mid + 1;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\b\dbch\af1\loch\f4\fs36 \'7d\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs36 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\b\dbch\af1\loch\f4\fs36 return -1 - low;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs36 \'7d\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 The }{\b\dbch\af1\loch\f4\fs72\cf1 Arrays.binarySearch}{\b\dbch\af1\loch\f1\fs72\cf1  Method\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs40 Since binary search is frequently used in programming, Java provides several overloaded }{\dbch\af1\loch\f4\fs40 binarySearch}{\dbch\af1\loch\f1\fs40  methods for searching a key in an array of }{\dbch\af1\loch\f4\fs40 int}{\dbch\af1\loch\f1\fs40 , }{\dbch\af1\loch\f4\fs40 double}{\dbch\af1\loch\f1\fs40 , }{\dbch\af1\loch\f4\fs40 char}{\dbch\af1\loch\f1\fs40 , }{\dbch\af1\loch\f4\fs40 short}{\dbch\af1\loch\f1\fs40 , }{\dbch\af1\loch\f4\fs40 long}{\dbch\af1\loch\f1\fs40 , and }{\dbch\af1\loch\f4\fs40 float}{\dbch\af1\loch\f1\fs40  in the }{\dbch\af1\loch\f4\fs40 java.util.Arrays}{\dbch\af1\loch\f1\fs40  class. For example, the following code searches the keys in an array of numbers and an array of characters.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs40 For the }{\dbch\af1\loch\f4\fs40 binarySearch}{\dbch\af1\loch\f1\fs40  method to work, the array must be pre-sorted in increasing order.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Sorting Arrays\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 Sorting, like searching, is also a common task in computer programming. Many different algorithms have been developed for sorting. This section introduces a simple, intuitive sorting algorithms: }{\b\dbch\af1\loch\f1\fs48 selection sort}{\dbch\af1\loch\f1\fs48 .\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Selection Sort\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs40 Selection sort finds the smallest number in the list and places it first. It then finds the smallest number remaining and places it second, and so on until the list contains only a single number.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 From Idea to Solution }{\dbch\af1\loch\f1\fs40\cf1 (3 of 6)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs36 for (int }{\b\dbch\af1\loch\f4\fs36 i}{\b\dbch\af1\loch\f4\fs36  = 0; }{\b\dbch\af1\loch\f4\fs36 i}{\b\dbch\af1\loch\f4\fs36  < }{\b\dbch\af1\loch\f4\fs36 list.length}{\b\dbch\af1\loch\f4\fs36 ; }{\b\dbch\af1\loch\f4\fs36 i}{\b\dbch\af1\loch\f4\fs36 ++) \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\b\dbch\af1\loch\f4\fs36 select the smallest element in list[i..listSize-1];\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\b\dbch\af1\loch\f4\fs36 swap the smallest with list[}{\b\dbch\af1\loch\f4\fs36 i}{\b\dbch\af1\loch\f4\fs36 ], if necessary;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\b\dbch\af1\loch\f4\fs36 // list[}{\b\dbch\af1\loch\f4\fs36 i}{\b\dbch\af1\loch\f4\fs36 ] is in its correct position.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\b\dbch\af1\loch\f4\fs36 // The next iteration apply on list[i+1..listSize-1]\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs36 \'7d\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs36 list [0] list [1] list [2] list [3] ... list [10]\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs36 list [0] list [1] list [2] list [3] ... list [10]\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs36 list [0] list [1] list [2] list [3] ... list [10]\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs36 list [0] list [1] list [2] list [3] ... list [10]\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs36 list [0] list [1] list [2] list [3] ... list [10]\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1\qc {\b\dbch\af1\loch\f4\fs36 ...\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs36 list [0] list [1] list [2] list [3] ... list [10]\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 From Idea to Solution }{\dbch\af1\loch\f1\fs40\cf1 (4 of 6)\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 From Idea to Solution }{\dbch\af1\loch\f1\fs40\cf1 (5 of 6)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 From Idea to Solution }{\dbch\af1\loch\f1\fs40\cf1 (6 of 6)}{\dbch\af1\loch\f1\fs72\cf1 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Wrap It in a Method\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 The }{\b\dbch\af1\loch\f4\fs72\cf1 Arrays.sort}{\b\dbch\af1\loch\f1\fs72\cf1  Method\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs40 Since sorting is frequently used in programming, Java provides several overloaded sort methods for sorting an array of }{\dbch\af1\loch\f4\fs40 int}{\dbch\af1\loch\f1\fs40 , }{\dbch\af1\loch\f4\fs40 double}{\dbch\af1\loch\f1\fs40 , }{\dbch\af1\loch\f4\fs40 char}{\dbch\af1\loch\f1\fs40 , }{\dbch\af1\loch\f4\fs40 short}{\dbch\af1\loch\f1\fs40 , }{\dbch\af1\loch\f4\fs40 long}{\dbch\af1\loch\f1\fs40 , and }{\dbch\af1\loch\f4\fs40 float}{\dbch\af1\loch\f1\fs40  in the }{\dbch\af1\loch\f4\fs40 java.util.Arrays}{\dbch\af1\loch\f1\fs40  class. For example, the following code sorts an array of numbers and an array of characters.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403 {\dbch\af1\loch\f4\fs40 double[] numbers = \'7b6.0, 4.4, 1.9, 2.9, 3.4, 3.5\'7d;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403 {\dbch\af1\loch\f4\fs40 java.util.Arrays.sort}{\dbch\af1\loch\f4\fs40 (numbers);\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403 {\dbch\af1\loch\f4\fs40 char[] chars = \'7b'a', 'A', '4', 'F', 'D', 'P'\'7d;\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403 {\dbch\af1\loch\f4\fs40 java.util.Arrays.sort}{\dbch\af1\loch\f4\fs40 (chars);\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs40 Java 8 now provides }{\dbch\af1\loch\f4\fs40 Arrays.parallelSort(list)}{\dbch\af1\loch\f1\fs40  that utilizes the multicore for fast sorting.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs68\cf1 The }{\b\dbch\af1\loch\f4\fs68\cf1 Arrays.toString(list)}{\b\dbch\af1\loch\f1\fs68\cf1  Method\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 The }{\dbch\af1\loch\f4\fs48 Arrays.toString}{\dbch\af1\loch\f4\fs48 (list)}{\dbch\af1\loch\f1\fs48  method can be used to return a string representation for the list.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f4\fs64\cf1 Main}{\b\dbch\af1\loch\f1\fs64\cf1  Method Is Just a Regular Method\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 You can call a regular method by passing actual parameters. Can you pass arguments to }{\b\dbch\af1\loch\f4\fs48 main}{\dbch\af1\loch\f1\fs48 ? Of course, yes. For example, the main method in class }{\b\dbch\af1\loch\f4\fs48 B}{\dbch\af1\loch\f1\fs48  is invoked by a method in }{\b\dbch\af1\loch\f4\fs48 A}{\dbch\af1\loch\f1\fs48 , as shown below:\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Command-Line Parameters\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs48 class }{\b\dbch\af1\loch\f4\fs48 TestMain}{\b\dbch\af1\loch\f4\fs48  \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\b\dbch\af1\loch\f4\fs48 public static void main(String[] }{\b\dbch\af1\loch\f4\fs48 args}{\b\dbch\af1\loch\f4\fs48 ) \'7b\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\b\dbch\af1\loch\f4\fs48 ...\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li284 {\b\dbch\af1\loch\f4\fs48 \'7d\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs48 \'7d\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\b\dbch\af1\loch\f4\fs48 java }{\b\dbch\af1\loch\f4\fs48 TestMain}{\b\dbch\af1\loch\f4\fs48  arg0 arg1 arg2 ... }{\b\dbch\af1\loch\f4\fs48 argn}{\b\dbch\af1\loch\f4\fs48 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs64\cf1 Processing Command-Line Parameters\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 In the main method, get the arguments from }{\dbch\af1\loch\f4\fs48 args}{\dbch\af1\loch\f4\fs48 [0], }{\dbch\af1\loch\f4\fs48 args}{\dbch\af1\loch\f4\fs48 [1], ..., }{\dbch\af1\loch\f4\fs48 args}{\dbch\af1\loch\f4\fs48 [n]}{\dbch\af1\loch\f1\fs48 , which corresponds to }{\dbch\af1\loch\f4\fs48 arg0, arg1, ..., }{\dbch\af1\loch\f4\fs48 argn}{\dbch\af1\loch\f1\fs48  in the command line.\par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Problem: Calculator\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li403\fi-403 {\pntext\pard\dbch\af1\loch\f1\fs48 \'95\tab}{\*\pn\pnlvlblt\pnf1\pnfs48{\pntxtb \'95}}{\dbch\af1\loch\f1\fs48 Objective: Write a program that will perform binary operations on integers. The program receives three parameters: an operator and two integers.\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 java Calculator 2 + 3\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 java Calculator\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 java Calculator\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\dbch\af1\loch\f1\fs48 java Calculator 2.3\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li1 {\ul\dbch\af1\loch\f1\fs48 Calculator}{\ul\dbch\af1\loch\f1\fs48 \par 
+}\pard\plain\ltrpar\s1\loch\af1\dbch\f1\fs32\cf2\lang1033 {\b\dbch\af1\loch\f1\fs72\cf1 Copyright\par 
+}\pard\plain\ltrpar\s2\li720\loch\af1\dbch\f1\fs28\cf2\lang1033\li160 {\b\dbch\af1\loch\f1\fs32 This work is protected by United States copyright laws and is provided solely for the use of instructors in teaching their courses and assessing student learning. Dissemination or sale of any part of this work (including on the World Wide Web) will destroy the integrity of the work and is not permitted. The work and materials from it should never be made available to students except by instructors using the accompanying text in their classes. All recipients of this work are expected to abide by these restrictions and to honor the intended pedagogical purposes and the needs of other instructors who rely on these materials.\par 
+}
+}
