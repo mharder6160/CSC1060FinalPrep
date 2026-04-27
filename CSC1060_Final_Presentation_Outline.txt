@@ -1,0 +1,703 @@
+Introduction to Java Programming and Data Structures
+	CSC 1060 Final Presentation
+	Thirteenth Edition - Pearson Education
+
+What is a Computer Program?
+	A set of instructions that tells a computer what to do
+	Examples: word processors, games, operating systems
+	Computer programs are written using programming languages
+
+What are Algorithms?
+	An algorithm is a step-by-step procedure to solve a problem
+	They are precise, unambiguous, and finite
+	Algorithms can be expressed in natural language, pseudocode, or flowcharts
+
+How Algorithms Work
+	Algorithms take input, process it, and produce output
+	They follow a defined sequence of steps
+	The result is predictable and repeatable
+	Can be expressed as natural language
+	Can be expressed as pseudocode
+	Can be expressed as programming language code
+	Can be expressed as flowcharts
+
+Types of Algorithms
+	Searching algorithms - find specific data
+	Encryption algorithms - secure data
+	Sorting algorithms - arrange data in order
+	Mathematical algorithms - compute values
+
+Introduction to Computers, Programs, and Java
+	Chapter 1
+	Introduction to Computers, Programs, and Java
+
+What Is a Computer?
+	A computer consists of a CPU, memory, storage devices, input/output devices, and communication devices
+
+CPU (Central Processing Unit)
+	The central component of a computer
+	Retrieves instructions from memory and executes them
+	Speed measured in MHz or GHz
+
+Memory
+	Memory stores data and program instructions for the CPU to execute
+	A memory unit is an ordered sequence of bytes
+	Memory is volatile - data is lost when power is off
+
+How Data Is Stored
+	Data of various kinds (numbers, characters, strings) are encoded as a series of bits (0s and 1s)
+	A bit is the smallest unit of storage
+	A byte consists of 8 bits
+
+Storage Devices
+	Memory is volatile; programs and data are permanently stored on storage devices
+	Types: magnetic disk drives, optical drives, USB flash drives
+
+Output Devices: Monitor
+	The monitor displays information (text and graphics)
+	Resolution and dot pitch determine quality
+	Screen resolution specifies the number of pixels in horizontal and vertical directions
+	Dot pitch is the amount of space between pixels
+
+Communication Devices
+	A regular modem uses a phone line to transfer data
+	DSL and cable modems transfer data much faster
+	Network interface cards (NIC) connect computers to a network
+
+Programs
+	Computer programs, known as software, are instructions that tell the computer what to do
+	Without programs, a computer is an empty machine
+	Programs are written using programming languages
+
+Programming Languages
+	Machine Language - primitive binary instructions built into every computer
+	Assembly Language - uses short descriptive words (mnemonics); requires an assembler
+	High-Level Language - English-like and easy to learn
+		Examples: Java, Python, C++, C#
+
+Interpreting and Compiling Source Code
+	A program written in a high-level language is called a source program
+	An interpreter translates and executes one statement at a time
+	A compiler translates the entire source code into a machine-code file
+
+Operating Systems
+	The operating system (OS) manages and controls a computer's activities
+	Examples: Windows, macOS, Linux, Android
+
+Why Java?
+	Java enables users to develop and deploy applications on the Internet
+	Java is simple, object-oriented, and platform-independent
+	Java is secure, robust, and multithreaded
+	"Write once, run anywhere"
+
+Java, Web, and Beyond
+	Java can be used to develop standalone applications
+	Java can be used to develop web applications
+	Java can be used to develop server-side applications
+	Java can be used for mobile and enterprise applications
+
+Elementary Programming
+	Chapter 2
+	Elementary Programming
+
+Reading Input From the Console
+	Create a Scanner object: Scanner input = new Scanner(System.in);
+	Use methods to read input: input.nextDouble(), input.nextInt(), input.next()
+	Prompt the user before reading: System.out.print("Enter a value: ");
+
+Implicit and Explicit Import
+	Implicit import: import java.util.*;
+	Explicit import: import java.util.Scanner;
+	No performance difference between the two
+
+Identifiers
+	An identifier is a sequence of characters that consists of letters, digits, underscores, and dollar signs
+	An identifier must start with a letter, underscore, or dollar sign
+	An identifier cannot be a reserved word
+	An identifier cannot be true, false, or null
+	Identifiers are case-sensitive
+
+Variables
+	Variables are used to store values that can change
+	Every variable has a name (identifier), a type, and a value
+	Variables must be declared before use
+
+Declaring Variables
+	int x;            // Declare x to be an integer variable
+	double radius;    // Declare radius to be a double variable
+	char a;           // Declare a to be a character variable
+
+Assignment Statements
+	x = 1;            // Assign 1 to x
+	radius = 1.0;     // Assign 1.0 to radius
+	a = 'A';          // Assign 'A' to a
+
+Named Constants
+	Use the "final" keyword to declare a constant
+	final double PI = 3.14159;
+	final int SIZE = 3;
+	Constants cannot be changed after declaration
+
+Naming Conventions
+	Variable and method names: use lowercase first letter, camelCase for subsequent words
+		Example: myVariable, computeArea
+	Class names: capitalize first letter of each word
+		Example: MyClass, ComputeArea
+	Constants: all uppercase with underscores
+		Example: MAX_VALUE, PI
+
+Numerical Data Types
+	byte - 8-bit integer
+	short - 16-bit integer
+	int - 32-bit integer
+	long - 64-bit integer
+	float - 32-bit floating-point
+	double - 64-bit floating-point
+
+Numeric Operators
+	+ (addition)
+	- (subtraction)
+	* (multiplication)
+	/ (division)
+	% (remainder/modulus)
+	Integer division truncates the decimal part
+
+Selections
+	Chapter 3
+	Selections
+
+The boolean Type and Operators
+	A boolean variable can hold true or false
+	boolean b = (1 > 2);  // false
+	Used for conditional logic in programs
+
+Relational Operators
+	== (equal to)
+	!= (not equal to)
+	> (greater than)
+	< (less than)
+	>= (greater than or equal to)
+	<= (less than or equal to)
+
+One-Way if Statements
+	Executes a block of code if a condition is true
+	Syntax: if (boolean-expression) { statement(s); }
+
+The Two-Way if Statement
+	Executes one block if true, another if false
+	Syntax: if (boolean-expression) { true-case; } else { false-case; }
+
+if-else Example
+	if (radius >= 0) {
+		area = radius * radius * 3.14159;
+	} else {
+		System.out.println("Negative input");
+	}
+
+Multiple Alternative if Statements
+	Used to test multiple conditions in sequence
+	if (condition1) { ... } else if (condition2) { ... } else { ... }
+
+Common Errors in Selections
+	Adding a semicolon at the end of an if clause creates an empty if statement
+	This is a logic error, not a compile or runtime error
+	The else clause matches the most recent unmatched if
+
+Mathematical Functions, Characters, and Strings
+	Chapter 4
+	Mathematical Functions, Characters, and Strings
+
+Mathematical Functions
+	Java provides many useful methods in the Math class for common mathematical operations
+
+The Math Class
+	Class constants:
+		Math.PI
+		Math.E
+	Class methods:
+		Trigonometric: sin, cos, tan, asin, acos, atan
+		Exponential: exp, log, log10, pow, sqrt
+		Rounding: ceil, floor, rint, round
+		min, max, abs, random
+
+Trigonometric Methods
+	Math.sin(radians)
+	Math.cos(radians)
+	Math.tan(radians)
+	Math.asin(value)
+	Math.acos(value)
+	Math.atan(value)
+	Convert degrees to radians using Math.toRadians()
+
+Exponent Methods
+	Math.exp(x) - returns e raised to the power of x
+	Math.log(x) - returns the natural logarithm of x
+	Math.log10(x) - returns the base-10 logarithm of x
+	Math.pow(a, b) - returns a raised to the power of b
+	Math.sqrt(x) - returns the square root of x
+
+Characters and Strings
+	char type stores a single character: char letter = 'A';
+	String type stores a sequence of characters: String s = "Hello";
+	Strings are objects in Java
+	Common String methods: length(), charAt(), substring(), toLowerCase(), toUpperCase(), trim()
+
+String Concatenation
+	Use + operator to concatenate strings
+	"Hello" + " " + "World" results in "Hello World"
+	Numbers are automatically converted to strings when concatenated
+
+Loops
+	Chapter 5
+	Loops
+
+Introducing while Loops
+	Executes a block of code repeatedly while a condition is true
+	int count = 0;
+	while (count < 100) { System.out.println("Welcome"); count++; }
+
+while Loop Structure
+	Check condition before each iteration
+	If condition is false initially, loop body never executes
+	Must ensure loop eventually terminates to avoid infinite loops
+
+Ending a Loop with a Sentinel Value
+	A sentinel value signals the end of input
+	Example: the input 0 signals end of number entry
+	Program reads and calculates sum until sentinel value is entered
+
+do-while Loop
+	Executes the loop body at least once before checking the condition
+	Syntax: do { statements; } while (loop-continuation-condition);
+
+for Loops
+	Used when the number of iterations is known
+	Syntax: for (initial-action; loop-condition; action-after-each-iteration) { body; }
+	All three parts of the for clause are optional
+
+Which Loop to Use
+	while loop - use when number of iterations is unknown
+	do-while loop - use when loop must execute at least once
+	for loop - use when number of iterations is known in advance
+	Use the one that is most intuitive for the problem
+
+Nested Loops
+	A loop inside another loop
+	The inner loop executes completely for each iteration of the outer loop
+	Example: multiplication table uses nested for loops
+
+Using break and continue
+	break - immediately exits the enclosing loop
+	continue - skips the rest of the current iteration and proceeds to the next
+	Use with caution to keep code readable
+
+Methods
+	Chapter 6
+	Methods
+
+Defining Methods
+	A method is a collection of statements grouped together to perform an operation
+	Syntax: modifier returnValueType methodName(list of parameters) { method body; }
+
+Method Signature
+	Method signature is the combination of the method name and the parameter list
+	Uniquely identifies a method within a class
+
+Formal Parameters
+	Variables defined in the method header are known as formal parameters
+	They receive values when the method is called
+
+Actual Parameters
+	When a method is invoked, you pass a value to the parameter
+	These values are referred to as actual parameters or arguments
+
+Return Value Type
+	A method may return a value
+	The returnValueType specifies the data type of the returned value
+	Use void if the method does not return a value
+
+Calling Methods
+	A method is invoked by its name followed by actual parameters in parentheses
+	Example: int result = max(3, 4);
+	Control transfers to the called method, then returns to the caller
+
+Call Stacks
+	Each method invocation creates an activation record (stack frame) on the call stack
+	Contains the method parameters and local variables
+	Stack frame is destroyed when the method returns
+
+Reuse Methods From Other Classes
+	Methods can be reused across different classes
+	Use ClassName.methodName() to call a static method from another class
+
+Method Overloading
+	Multiple methods can have the same name but different parameter lists
+	The compiler selects the appropriate method based on the argument types
+	Return type alone is not sufficient to distinguish overloaded methods
+
+Variable Scope
+	The scope of a variable is the part of the program where the variable can be referenced
+	Local variables are declared inside a method and accessible only within that method
+
+Single-Dimensional Arrays
+	Chapter 7
+	Single-Dimensional Arrays
+
+Introducing Arrays
+	An array is a data structure that represents a collection of the same types of data
+	Elements are accessed by index (0-based)
+
+Declaring Array Variables
+	Syntax: datatype[] arrayRefVar;
+		Example: double[] myList;
+	Alternative syntax: datatype arrayRefVar[];
+		Example: double myList[];
+
+Creating Arrays
+	Syntax: arrayRefVar = new datatype[arraySize];
+		Example: myList = new double[10];
+	myList[0] references the first element
+	myList[9] references the last element in a 10-element array
+
+Declaring and Creating in One Step
+	double[] myList = new double[10];
+	double myList[] = new double[10];
+
+The Length of an Array
+	Once created, the array size is fixed and cannot be changed
+	Access the size using: arrayRefVar.length
+	Example: myList.length returns 10
+
+Default Values
+	Numeric primitive types default to 0
+	char defaults to '\u0000'
+	boolean defaults to false
+
+Indexed Variables
+	Array indices are 0-based
+	Syntax: arrayRefVar[index]
+	Each element is called an indexed variable
+
+Array Initializers
+	Shorthand: double[] myList = {1.9, 2.9, 3.4, 3.5};
+	Declaration, creation, and initialization must be in one statement
+
+Processing Arrays
+	Initializing arrays with input values using loops
+	Printing array elements using loops
+	Summing all elements using a loop
+	Finding the maximum or minimum element
+	Sorting array elements
+	Passing arrays to methods and returning arrays from methods
+
+Multidimensional Arrays
+	Chapter 8
+	Multidimensional Arrays
+
+Declaring Two-Dimensional Arrays
+	dataType[][] refVar;
+	refVar = new dataType[rows][columns];
+	Combined: dataType[][] refVar = new dataType[10][10];
+	Alternative: dataType refVar[][] = new dataType[10][10];
+
+Creating Two-Dimensional Arrays
+	int[][] matrix = new int[10][10];
+	matrix[0][0] = 3;
+	Nested loops are used to process all elements
+
+Two-Dimensional Array Illustration
+	matrix.length gives the number of rows
+	matrix[i].length gives the number of columns in row i
+	Accessing elements: matrix[row][column]
+
+Initializing with Shorthand Notation
+	int[][] array = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+	Creates and initializes in one statement
+
+Ragged Arrays
+	Each row in a two-dimensional array can have a different length
+	Such arrays are known as ragged arrays
+	Rows are themselves array objects with individual lengths
+
+Processing Two-Dimensional Arrays
+	Initializing arrays with input values
+	Printing arrays with nested loops
+	Summing all elements
+	Summing elements by column
+	Finding the row with the largest sum
+	Finding the maximum element in the array
+	Random shuffling of elements
+
+Objects and Classes
+	Chapter 9
+	Objects and Classes
+
+OOP Concepts
+	Object-oriented programming (OOP) involves programming using objects
+	An object represents an entity in the real world
+	Objects have state (data fields) and behavior (methods)
+
+Objects
+	An object has both a state and behavior
+	The state defines the object; the behavior defines what the object does
+	Examples: a circle object has radius (state) and getArea() (behavior)
+
+Classes
+	Classes are constructs that define objects of the same type
+	A Java class uses variables (data fields) and methods
+	A class is a template/blueprint for creating objects
+
+UML Class Diagrams
+	UML (Unified Modeling Language) class diagrams show class structure
+	Top section: class name
+	Middle section: data fields
+	Bottom section: methods
+
+Constructors
+	Constructors are special methods invoked to construct objects
+	A constructor with no parameters is a no-arg constructor
+	Constructors have the same name as the class
+	Constructors do not have a return type
+
+Creating Objects Using Constructors
+	new ClassName();
+	new Circle();
+	new Circle(5.0);
+
+Default Constructor
+	If no constructor is defined, Java provides a default no-arg constructor
+	The default constructor sets data fields to default values
+
+Declaring Object Reference Variables
+	ClassName objectRefVar;
+	Example: Circle myCircle;
+	Declare and create in one step: Circle myCircle = new Circle();
+
+Accessing Object Members
+	Reference a data field: objectRefVar.data
+		Example: myCircle.radius
+	Invoke a method: objectRefVar.methodName(arguments)
+		Example: myCircle.getArea()
+
+Instance vs Static Variables and Methods
+	Instance variables and methods belong to a specific object
+	Static variables and methods belong to the class and are shared by all objects
+	Access static members using the class name: Math.PI, Math.sqrt()
+
+Encapsulation
+	Data fields should be declared private
+	Provide public get and set methods (getters and setters) to access them
+	This protects data integrity and hides implementation details
+
+Thinking in Objects
+	Chapter 10
+	Thinking in Objects
+
+Class Abstraction and Encapsulation
+	Class abstraction means separating class implementation from the use of the class
+	The creator provides a contract (interface) for users
+	Users do not need to know the implementation details
+
+Class Relationships
+	Association - a general binary relationship between two classes
+	Aggregation - a "has-a" relationship (whole-part)
+	Composition - a strong form of aggregation (part cannot exist without the whole)
+	Inheritance - an "is-a" relationship (covered in later chapters)
+
+Object Composition
+	Composition is a special case of aggregation
+	Aggregation models has-a relationships
+	Example: a student has an address
+
+Aggregation Between Same Class
+	Aggregation may exist between objects of the same class
+	Example: a Person may have a supervisor who is also a Person
+	Represented as a data field of the same class type
+
+Wrapper Classes
+	Java provides wrapper classes for each primitive data type
+	Boolean, Character, Short, Byte, Integer, Long, Float, Double
+	Wrapper classes do not have no-arg constructors
+	Used when an object is required (e.g., in collections)
+
+The Integer and Double Classes
+	Constructors: Integer(int), Integer(String), Double(double), Double(String)
+	Class constants: MAX_VALUE, MIN_VALUE
+	Conversion methods: doubleValue(), intValue(), floatValue()
+	Static methods: parseInt(String), valueOf(String)
+
+Numeric Wrapper Class Constants
+	MAX_VALUE - the maximum value for the type
+	MIN_VALUE - the minimum value for the type
+	Example: Integer.MAX_VALUE, Double.MIN_VALUE
+
+AutoBoxing and Unboxing
+	AutoBoxing: primitive type is automatically converted to wrapper object
+		Integer x = 5;
+	Unboxing: wrapper object is automatically converted to primitive type
+		int y = x;
+
+Exception Handling and Text I/O
+	Chapter 12
+	Exception Handling and Text I/O
+
+Motivations
+	When a program encounters a runtime error, it terminates abnormally
+	Exception handling allows the program to handle errors gracefully
+	Enables separation of error-handling code from normal code
+
+Exception Types
+	System errors - thrown by the JVM (e.g., OutOfMemoryError)
+	Exceptions - represent error conditions (e.g., IOException)
+	Runtime exceptions - errors in programming logic (e.g., NullPointerException)
+
+Checked vs Unchecked Exceptions
+	RuntimeException, Error, and their subclasses are unchecked exceptions
+	All other exceptions are checked exceptions
+	Unchecked exceptions do not need to be declared or caught
+	Checked exceptions must be either caught or declared
+
+Declaring Exceptions
+	Every method must state the types of checked exceptions it might throw
+	public void myMethod() throws IOException
+	public void myMethod() throws IOException, OtherException
+
+Throwing Exceptions
+	The program creates an exception instance and throws it
+	throw new TheException();
+	TheException ex = new TheException(); throw ex;
+
+Catching Exceptions
+	Use try-catch blocks to handle exceptions
+	try { statements; }
+	catch (Exception1 ex) { handler for exception1; }
+	catch (Exception2 ex) { handler for exception2; }
+	Multiple catch blocks can follow one try block
+
+Rethrowing Exceptions
+	An exception can be caught and rethrown to the caller
+	try { statements; } catch (TheException ex) { perform operations; throw ex; }
+
+The finally Clause
+	The finally block always executes, whether or not an exception occurs
+	Used to release resources (close files, connections)
+	try { statements; } catch (Exception ex) { handling; } finally { finalStatements; }
+
+Text I/O
+	Use PrintWriter to write data to a file
+	Use Scanner to read data from a file
+	Always close file streams after use
+	File I/O can throw checked exceptions (IOException)
+
+Recursion
+	Chapter 18
+	Recursion
+
+What is Recursion
+	A recursive method is one that calls itself
+	Must have a base case to stop recursion
+	Must make progress toward the base case with each call
+
+Computing Factorial
+	factorial(0) = 1 (base case)
+	factorial(n) = n * factorial(n-1) for n > 0
+	Each call reduces the problem by one step
+
+Recursive vs Iterative
+	Any recursive solution can be implemented iteratively
+	Recursion can be less efficient due to method call overhead
+	Recursion provides elegant solutions to naturally recursive problems
+
+How Recursive Calls are Handled
+	Each recursive call is placed on the call stack
+	Each stack frame holds the method parameters and local variables
+	When base case is reached, stack frames are popped in reverse order
+
+Fibonacci Numbers
+	fib(0) = 0 (base case)
+	fib(1) = 1 (base case)
+	fib(n) = fib(n-1) + fib(n-2) for n >= 2
+	Simple recursive solution is inefficient (exponential time)
+
+Problem Solving Using Recursion
+	Recursion is well-suited for problems with naturally recursive structure
+	Directory traversal, tree operations, fractals
+	Divide the problem into smaller subproblems of the same type
+
+Selection Sort Using Recursion
+	Find the minimum element and swap it to the front
+	Recursively sort the remaining elements
+	Base case: array of size 1 is already sorted
+
+Binary Search Using Recursion
+	Divide the sorted array in half
+	Recursively search in the left or right half
+	Base case: array is empty (element not found)
+
+Tower of Hanoi
+	Move n disks from source peg to destination peg using auxiliary peg
+	Base case: move 1 disk directly
+	Recursive case: move n-1 disks to auxiliary, move largest disk, move n-1 disks to destination
+
+Tail Recursion
+	A recursive method is tail-recursive if the recursive call is the last action
+	Tail-recursive methods can be converted to iterative methods
+	More efficient as the compiler can optimize tail recursion
+
+Number Systems
+	Appendix F
+	Number Systems
+
+Number System Overview
+	Binary - base 2, digits: 0, 1
+	Octal - base 8, digits: 0-7
+	Decimal - base 10, digits: 0-9
+	Hexadecimal - base 16, digits: 0-9, A-F
+
+Why Binary
+	Computers use binary internally because storage devices store only 0s and 1s
+	Binary numbers map directly to electronic on/off states
+	Hexadecimal is used to abbreviate binary (more compact representation)
+
+Binary to Decimal Conversion
+	Each digit is multiplied by its positional power of 2
+	10 in binary = 2 in decimal
+	1000 in binary = 8 in decimal
+	10101011 in binary = 171 in decimal
+
+Decimal to Binary Conversion
+	Repeatedly divide the decimal number by 2
+	Record the remainders in reverse order
+	Example: decimal 123 = binary 1111011
+
+Hexadecimal to Decimal Conversion
+	Each digit is multiplied by its positional power of 16
+	Digits A-F represent values 10-15
+	7F in hex = 127 in decimal
+	FFFF in hex = 65535 in decimal
+
+Decimal to Hexadecimal Conversion
+	Repeatedly divide the decimal number by 16
+	Record the remainders (using A-F for 10-15) in reverse order
+	Example: decimal 123 = hexadecimal 7B
+
+Hexadecimal and Binary Conversion
+	Convert each hex digit to a 4-bit binary group
+	Convert every 4 binary digits (right to left) to one hex digit
+	Example: hex AB = binary 10101011
+
+Course Summary
+	Key Topics Covered in CSC 1060
+	Introduction to computers, programs, and Java
+	Elementary programming - variables, types, operators
+	Selections - if, if-else, switch statements
+	Mathematical functions, characters, and strings
+	Loops - while, do-while, for, nested loops
+	Methods - defining, calling, overloading, scope
+	Single-dimensional arrays
+	Multidimensional arrays
+	Objects and classes - OOP fundamentals
+	Thinking in objects - abstraction, encapsulation, relationships
+	Exception handling and Text I/O
+	Recursion
+	Number systems - binary, hexadecimal, decimal
