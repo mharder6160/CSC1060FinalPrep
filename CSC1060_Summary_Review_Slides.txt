@@ -1,0 +1,229 @@
+CSC 1060 Final Exam - Complete Summary Review
+	All Topics Tested on the Final Exam and Mini Mock
+	Quick Reference for Exam Preparation
+
+UNIT 1 - Computers and Java Basics
+	A computer has: CPU, memory, storage devices, input/output devices, communication devices
+	CPU speed is measured in MHz or GHz (NOT megabytes or gigabytes - those are storage)
+	Memory (RAM) is volatile - data is LOST when power is turned off
+	Storage devices (hard disk, USB, CD-ROM) are non-volatile - data persists
+	Software = programs = instructions to the computer
+	Binary (0s and 1s) is used because digital devices have two stable electrical states
+	Every letter in a Java keyword is lowercase (int, double, if, else, for, while, etc.)
+	The correct main method header: public static void main(String[] args)
+	Alternative valid form: public static void main(String args[])
+
+UNIT 2 - Error Types
+	Compile (Syntax) Error - detected before running; program will not compile
+		Example: missing closing quote, missing semicolon, mismatched braces
+	Runtime Error - program compiles but crashes while running
+		Example: dividing by zero, NullPointerException, ArrayIndexOutOfBoundsException
+	Logic Error - program runs without crashing but produces wrong output
+		Example: using wrong formula, off-by-one errors
+
+UNIT 3 - Variables, Data Types, and Operators
+	Every statement in Java ends with a semicolon (;)
+	Correct declaration: int length; int width;  OR  int length, width;
+	INCORRECT: int length; width;  OR  int length, int width;
+	Integer data types: byte(8), short(16), int(32), long(64)
+	Floating-point types: float(32), double(64)
+	Augmented assignment: x += 1 means x = x + 1
+	Integer division TRUNCATES (drops) the decimal: 45 / 4 = 11 (not 11.25)
+	Modulus (%): 45 % 4 = 1 (remainder after division)
+	Modulus with negatives: sign follows the LEFT operand (dividend)
+		-24 % -5 = -4; -24 % 5 = -4; 24 % -5 = 4
+
+UNIT 4 - Casting and Rounding
+	Casting truncates (does NOT round): (int)(45.8) = 45
+	To round to 2 decimal places: (int)(x * 100) / 100.0
+		Example: (int)(45.378 * 100) / 100.0 = 4537 / 100.0 = 45.37
+	Dividing int / int = int (decimal dropped); int / double = double
+	Math.ceil(x) = rounds UP always (returns double)
+	Math.floor(x) = rounds DOWN always (returns double)
+	Math.round(x) = rounds to nearest (returns long/int)
+	Math.rint(x) = rounds to nearest EVEN integer (banker's rounding, returns double)
+		Math.rint(3.5) = 4.0; Math.rint(4.5) = 4.0; Math.rint(2.5) = 2.0
+
+UNIT 5 - Characters and Strings
+	char is stored as a Unicode integer value
+		'a' = 97, 'z' = 122; 'z' - 'a' = 25
+		'A' = 65, 'Z' = 90; '0' = 48, '9' = 57
+	Strings are IMMUTABLE - methods return new strings, original is unchanged
+		s.replace("i", "ABC") does NOT change s
+		Must reassign: s = s.replace("i", "ABC")
+	String comparison: use .equals() for content, == for reference (memory address)
+		String s2 = s1; then s1 == s2 is TRUE (same reference)
+		new String("Hello") == new String("Hello") is FALSE (different objects)
+	Create String from char array: new String(charArray)
+	String.split("[,;]") splits on comma OR semicolon
+		"A,B;C;D".split("[,;]") → array {"A","B","C","D"} → prints: A B C D
+
+UNIT 6 - Math Class Methods
+	Math.PI = 3.14159... (pi constant)
+	Math.E = 2.71828... (Euler's number)
+	Math.cos(Math.PI) = -1.0 (cos of 180 degrees)
+	Math.sin(0) = 0.0; Math.sin(Math.PI / 2) = 1.0
+	Math.sqrt(x), Math.pow(a, b), Math.abs(x)
+	Math.random() returns a double in [0.0, 1.0)
+		Generate 0 or 1: (int)(Math.random() + 0.5)
+		(int)Math.random() always gives 0 (WRONG for this purpose)
+
+UNIT 7 - Selections (if/else, boolean, logical operators)
+	boolean values: true, false
+	Relational operators: == != > < >= <=
+	Logical AND (&&): both sides must be true; short-circuits if left is false
+	Logical OR (||): at least one side must be true; short-circuits if left is true
+	Short-circuit: (y >= 10) || (x++ > 10) - if y >= 10, x++ is NEVER evaluated
+	CORRECT: if x=4, then x != 5 is TRUE; x == 4 is TRUE
+	Boolean assignment shorthand: boolean even = (number % 2 == 0);  -- valid and preferred
+
+UNIT 8 - Loops
+	while loop - condition checked before each iteration; may never execute
+	do-while loop - condition checked AFTER; always executes at least once
+	for loop - use when number of iterations is known
+	break - exits the enclosing loop immediately
+	continue - skips rest of current iteration, goes to next iteration
+	Floating-point loop counters can cause precision issues - use int counters instead
+	Sentinel value - special input value that signals end of input (e.g., 0 or -1)
+
+UNIT 9 - Methods
+	Method signature = method name + parameter list (return type is NOT part of signature)
+	Formal parameters = variables in the method header
+	Actual parameters (arguments) = values passed when calling the method
+	void = method returns nothing
+	Local variable scope: variable declared inside a block { } only exists within that block
+		int k = 2; declared inside {} is NOT accessible outside those braces - compile error
+	Varargs: public static void print(double... numbers) - accepts variable number of doubles
+		Varargs must be the LAST parameter; cannot have two varargs parameters
+	Command-line args: args.length = number of arguments passed (first arg is args[0])
+	printf: System.out.printf("%3.1f", 1234.56) → 1234.6 (1 decimal place, rounds)
+
+UNIT 10 - Arrays
+	Array declaration: int[] a; or int a[]; (both valid)
+	INVALID: char[] c = new char(); (must use brackets: new char[size])
+	INVALID: int a() = new int[2]; (parentheses are for methods, not arrays)
+	Array initializer: int[] i = {3, 4, 3, 2}; -- VALID
+	2D array: int[][] x = {{1,2},{3,4},{5,6}}; x.length = 3 (rows), x[0].length = 2 (cols)
+	Valid 2D char array: char[][] charArray = {{'a','b'}, {'c','d'}};
+	Create String from char[]: new String(charArray)
+	Arrays are OBJECTS - assigning one array variable to another creates an ALIAS
+		list2 = list1; both variables point to the SAME array; changes via either affect both
+
+UNIT 11 - Objects and Classes
+	Instance variables and methods belong to an object
+	Class variables (static variables) are shared by ALL instances of a class
+	Instance method = method associated with an individual object (NOT static)
+	Static method = associated with the class (call with ClassName.method())
+	Constructor: same name as class, NO return type (not even void), can be overloaded
+		Multiple constructors can exist in the same class (constructor overloading)
+		Constructors do NOT have a return type, NOT even void
+		private constructor prevents the class from being instantiated
+	Encapsulation: declare data fields private; provide public getters/setters
+		Purpose: makes the program easier to maintain and protects data integrity
+		Use the private modifier to encapsulate data fields
+
+UNIT 12 - Immutable Objects
+	An immutable object's state cannot be changed after it is created
+	String is the most common immutable class in Java
+	To create an immutable class:
+		Declare all data fields private and final
+		Provide no setter methods
+		If a data field is a reference type (object), that object must also be immutable
+	Immutable objects are thread-safe and reliable
+
+UNIT 13 - StringBuilder
+	StringBuilder is mutable (unlike String)
+	replace(int start, int end, String str) replaces indices start to end-1
+		"ABCCEFC".replace(2, 7, "TTEFT") → "ABTTEFT" (replaces indices 2,3,4,5,6)
+	append(str), insert(offset, str), delete(start, end), reverse(), toString()
+	Use StringBuilder when making many modifications to a string (more efficient)
+
+UNIT 14 - Recursion
+	A recursive method calls itself
+	Must have a base case (stopping condition) - without it, infinite recursion occurs
+	Must make progress toward the base case with each call
+	if vs while in recursive methods:
+		if: makes one recursive call per activation (correct)
+		while: keeps looping and calling recursively = exponential calls = infinite behavior
+	Recursive selection sort: find max, swap to end, recursively sort remaining elements
+		sort(list, list.length - 1) is the correct call to start the recursion
+	Tail recursion: recursive call is the last operation - can be optimized by compiler
+
+UNIT 15 - Number Systems
+	Binary (base 2): digits 0, 1 - used internally in computers
+	Octal (base 8): digits 0-7
+	Decimal (base 10): digits 0-9
+	Hexadecimal (base 16): digits 0-9, A-F (A=10, B=11, C=12, D=13, E=14, F=15)
+	Binary → Decimal: multiply each bit by its power of 2
+		10101011 = 128+0+32+0+8+2+1 = 171
+	Decimal → Binary: repeatedly divide by 2, read remainders in reverse
+		123 in decimal = 1111011 in binary
+	Hex → Decimal: multiply each digit by its power of 16
+		7F = 7*16 + 15 = 127; FFFF = 65535
+	Hex ↔ Binary: each hex digit = exactly 4 binary digits
+		A = 1010, B = 1011, F = 1111
+
+ANSWER KEY - Mini Mock ICA2
+	Q1: B (compile error - missing closing quote)
+	Q2: A (readable object-type property must also be immutable)
+	Q3: D (University - strings are immutable; replace() does not change original)
+	Q4: A (25 - 'z'(122) - 'a'(97) = 25)
+	Q5: C (memory is volatile)
+	Q6: C (class variables = static variables shared by all instances)
+	Q7: C (encapsulation makes program easier to maintain)
+	Q8: A (Java language specification)
+	Q9: C (-4 - sign follows dividend)
+	Q10: B (x is 1 - x starts at 0, condition 0 < 4 is true, x becomes 1)
+	Q11: E ((int)(Math.random() + 0.5) gives 0 or 1)
+	Q12: A (int a[] is valid)
+	Q13: A (every statement ends with semicolon)
+	Q14: E (3 rows, 2 columns → x.length=3, x[0].length=2)
+	Q15: A (new String(a))
+	Q16: A (method name and parameter list)
+	Q17: B (args.length is the total number of arguments)
+	Q18: B (1234.6 - %3.1f gives 1 decimal place, width 3 is ignored)
+	Q19: B (No - char[] c = new char() is invalid; needs new char[size])
+	Q20: A (same reference → s1 == s2 is true)
+	Q21: C (gigahertz)
+	Q22: A (software = instructions)
+	Q23: D (x is 326 and y is 4)
+	Q24: C (x != 5 is true when x=4)
+	Q25: C (char[][] charArray = {{'a','b'},{'c','d'}})
+	Q26: D (sort(list, list.length - 1))
+	Q27: C (x remains 10 - short-circuit: y>=10 is true so x++ never executes)
+	Q28: E (6 - iterations: 1→sum=1, 2→sum=3, 3→sum=6→break)
+	Q29: D (pseudocode)
+	Q30: A (nextDouble() generates pseudorandom double between 0.0 and 1.0)
+
+ANSWER KEY - Final Exam
+	Q1: A (i is 4, 9 is not prime)
+	Q2: C (Math.cos(Math.PI) = -1.0)
+	Q3: A (0 1 2 - list2 = list1 makes them aliases; list2[2]=2 changes shared array)
+	Q4: B (Yes - array initializer is valid)
+	Q5: B (multiple constructors can be defined)
+	Q6: B (x>5 || y>5 is true because y=5 and y>5... wait, y=5 and y>5 is false; x>5 is false too)
+	Q6 corrected: C (x<5 || y<5 is true because x=4 and x<5 is true)
+	Q7: A (x += 1)
+	Q8: B (compile error - k not accessible outside its block)
+	Q9: A (No - two varargs parameters are invalid)
+	Q10: A (True - all Java keywords are lowercase)
+	Q11: C (Program A: 4 3 2 1; Program B: 4 3 2 1 1 1... infinite)
+	Q12: A (Yes - String args[] is valid alternative syntax)
+	Q13: C (two stable electrical states)
+	Q14: D (parentheses make it look like a method)
+	Q15: C (instance method)
+	Q16: C (both are correct, Code 2 is better)
+	Q17: C (semicolon)
+	Q18: D (int length; int width;)
+	Q19: C (11 - integer division truncates)
+	Q20: C (4.0 - Math.rint uses banker's rounding; 3.5 rounds to 4.0)
+	Q21: B (readable object-type property must also be immutable)
+	Q22: E (public static void main(String[] args))
+	Q23: C (gigahertz)
+	Q24: C (A B C D)
+	Q25: B (constructors do NOT have a return type, not even void)
+	Q26: D (private constructor)
+	Q27: C (private modifier for encapsulation)
+	Q28: C ((int)(45.378 * 100) / 100.0 = 45.37)
+	Q29: C (likely infinite loop due to floating-point precision)
+	Q30: E (strBuilder.replace(2, 7, "TTEFT"))
