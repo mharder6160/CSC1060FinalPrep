@@ -1,0 +1,1084 @@
+Question 1
+==========
+
+Suppose the input for number is 9. What is the output from running the following program?
+
+  import java.util.Scanner;
+
+  public class Test {
+    public static void main(String[] args) {
+      Scanner input = new Scanner(System.in);
+      System.out.print("Enter an integer: ");
+      int number = input.nextInt();
+
+      int i;
+
+      boolean isPrime = true;
+      for (i = 2; i < number && isPrime; i++) {
+        if (number % i == 0) {
+          isPrime = false;
+        }
+      }
+
+      System.out.println("i is " + i);
+
+      if (isPrime)
+        System.out.println(number + " is prime");
+      else
+        System.out.println(number + " is not prime");
+    }
+  }
+
+A) i is 4 followed by 9 is not prime
+
+B) i is 3 followed by 9 is not prime
+
+C) i is 4 followed by 9 is prime
+
+D) i is 3 followed by 9 is prime
+
+Question 2
+==========
+
+Math.cos(Math.PI) returns ________.
+
+A) 0.0
+
+B) 1.0
+
+C) -1.0
+
+D) 0.5
+
+Question 3
+==========
+
+In the following code, what is the output for list1?
+
+  public class Test {
+    public static void main(String[] args) {
+      int[] list1 = {1, 2, 3};
+      int[] list2 = {1, 2, 3};
+      list2 = list1;
+      list1[0] = 0; list1[1] = 1; list2[2] = 2;
+
+      for (int i = 0; i < list1.length; i++)
+        System.out.print(list1[i] + " ");
+    }
+  }
+
+A) 0 1 2
+
+B) 0 1 3
+
+C) 1 2 3
+
+D) 1 1 1
+
+Question 4
+===========
+
+Is the following statement valid?
+
+  int[] i = {3, 4, 3, 2};
+
+A) No
+
+B) Yes
+
+Question 5
+===========
+
+Which of the following statements about constructors is true?
+
+A) Only abstract classes allow multiple constructors.
+
+B) Multiple constructors can be defined in a class.
+
+C) Constructors cannot be overloaded.
+
+D) A class may define only one constructor.
+
+Question 6
+==========
+
+Assume x = 4 and y = 5, which of the following is true?
+
+A) x > 5 && y > 5
+
+B) x > 5 || y > 5
+
+C) x < 5 || y < 5
+
+D) x < 5 && y < 5
+
+Question 7
+==========
+
+To add a value 1 to variable x, you write ________.
+
+A) x += 1;
+
+B) x := 1;
+
+C) x = x + 2;
+
+D) 1 + x = x;
+
+E) x = 3 + x;
+
+Question 8
+==========
+
+What happens when the following block is executed?
+  {
+    int k = 2;
+    nPrint("A message", k);
+  }
+  System.out.println(k);
+
+A) 1
+
+B) k is not defined outside the block. So, the program has a compile error
+
+C) 0
+
+D) 2
+
+Question 9
+==========
+
+Is the following method declaration correct?
+
+  public static void print(String... strings, double... numbers)
+
+A) No
+
+B) Yes
+
+Question 10
+===========
+
+True or False? Every letter in a Java keyword is in lowercase.
+
+A) True
+
+B) False
+
+Question 11
+===========
+
+Analyze the following two programs:
+
+  A:
+
+  public class Test {
+    public static void main(String[] args) {
+      xMethod(5);
+    }
+
+    public static void xMethod(int length) {
+      if (length > 1) {
+        System.out.print((length - 1) + " ");
+        xMethod(length - 1);
+      }
+    }
+  }
+
+  B:
+
+  public class Test {
+    public static void main(String[] args) {
+      xMethod(5);
+    }
+
+    public static void xMethod(int length) {
+      while (length > 1) {
+        System.out.print((length - 1) + " ");
+        xMethod(length - 1);
+      }
+    }
+  }
+
+A) The two programs produce the same output 5 4 3 2 1.
+
+B) The two programs produce the same output 1 2 3 4 5.
+
+C) Program A produces the output 4 3 2 1 and Program B prints 4 3 2 1 1 1 .... 1 infinitely.
+
+D) The two programs produce the same output 1 2 3 4.
+
+E) The two programs produce the same output 4 3 2 1.
+
+Question 12
+===========
+
+Is the following a correct header for the main method in Java?
+
+  public static void main(String args[])
+
+A) Yes
+
+B) No
+
+Question 13
+===========
+
+Why do computers use zeros and ones?
+
+A) Because binary numbers are simplest.
+
+B) Because binary numbers are the bases upon which all other number systems are built.
+
+C) Because digital devices have two stable states and it is natural to use one state for 0 and the other for 1.
+
+D) Because combinations of zeros and ones can represent any numbers and characters.
+
+Question 14
+===========
+
+Which of the following best describes the ERROR in int a() = new int[2];?
+
+A) You must use double brackets for arrays
+
+B) It's missing a semicolon
+
+C) The data type is INVALID
+
+D) Arrays cannot be declared using parentheses like a method
+
+Question 15
+===========
+
+A method that is associated with an individual object is called ________.
+
+A) an object method
+
+B) a static method
+
+C) an instance method
+
+D) a class method
+
+Question 16
+===========
+
+Analyze the following code:
+
+    Code 1:
+
+    int number = 45;
+    boolean even;
+
+    if (number % 2 == 0)
+        even = true;
+    else
+        even = false;
+
+    Code 2:
+    int number = 45;
+    boolean  even  = (number % 2 == 0);
+
+A) Both Code 1 and Code 2 have compile errors.
+
+B) Code 1 has compile errors.
+
+C) Both Code 1 and Code 2 are correct, but Code 2 is better.
+
+D) Code 2 has compile errors.
+
+Question 17
+===========
+
+Every statement in Java ends with ________.
+
+A) a comma (,)
+
+B) a period (.)
+
+C) a semicolon (;)
+
+D) an asterisk (*)
+
+Question 18
+===========
+
+Which of the following are correct ways to declare variables?
+
+A) int length; width;
+
+B) int length, int width;
+
+C) int length/ width;
+
+D) int length; int width;
+
+Question 19
+===========
+
+What is the result of 45 / 4?
+
+A) 12
+
+B) 11.25
+
+C) 11
+
+D) 10
+
+Question 20
+===========
+
+What is Math.rint(3.5)?
+
+A) 5.0
+
+B) 4
+
+C) 4.0
+
+D) 3.0
+
+E) 3
+
+Question 21
+===========
+
+Which statement correctly describes object-type properties within immutable objects?
+
+A) Readable object-type properties must implement the Serializable interface.
+
+B) A readable object-type property in an immutable object must also be immutable.
+
+C) Object-type properties must be reassigned in a synchronized block.
+
+D) Object-type properties are converted to primitives before assignment.
+
+E) Object-type properties should be declared with volatile.
+
+Question 22
+===========
+
+The main method header is written as ________.
+
+A) public static void Main(String[] args)
+
+B) public void main(String[] args)
+
+C) public static main(String[] args)
+
+D) public static void main(string[] args)
+
+E) public static void main(String[] args)
+
+Question 23
+===========
+
+The speed of the CPU (Central Processing Unit) may be measured in ________.
+
+A) megabytes
+
+B) gigabytes
+
+C) gigahertz
+
+D) nanobytes
+
+Question 24
+===========
+
+What is displayed by the following code?
+
+  public class Test {
+    public static void main(String[] args) {
+
+      String[] tokens = "A,B;C;D".split("[,;]");
+      for (int i = 0; i < tokens.length; i++)
+        System.out.print(tokens[i] +  " ");
+
+    }
+  }
+
+A) A B C;D
+
+B) A,B;C;D
+
+C) A B C D
+
+D) A B;C;D
+
+Question 25
+===========
+
+Which of the following statements correctly describes constructor return types?
+
+A) Constructors must specify void as a return type.
+
+B) Constructors do NOT have a return type, NOT even void.
+
+C) Constructors always return an object reference.
+
+D) Constructors can optionally include any primitive return type.
+
+Question 26
+===========
+
+To prevent a class from being instantiated, ________
+
+A) use the static modifier on the constructor.
+
+B) don't use any modifiers on the constructor.
+
+C) use the public modifier on the constructor.
+
+D) use the private modifier on the constructor.
+
+Question 27
+===========
+
+Which of the following statements best illustrates how encapsulation is implemented in Java?
+
+A) Use the public modifier to expose all class members.
+
+B) Use the static modifier for encapsulation.
+
+C) Use the private modifier to encapsulate data fields.
+
+D) Use the abstract keyword to hide implementation details.
+
+E) Use protected access to allow subclass visibility.
+
+Question 28
+===========
+
+Which of the following expression results in 45.37?
+
+A) (int)(45.378) * 100 / 100.0
+
+B) (int)(45.378 * 100) / 100
+
+C) (int)(45.378 * 100) / 100.0
+
+D) (int)(45.378 * 100 / 100)
+
+Question 29
+===========
+
+Analyze the following statement in Java, considering typical floating-point arithmetic behavior:
+
+  double sum = 0;
+  for (double d = 0; d < 10;) {
+    d += 0.1;
+    sum += sum + d;
+  }
+
+A) The program will result in a compile-time error.
+
+B) The program will compile and terminate, executing exactly 100 iterations.
+
+C) The program will compile but is likely to run as an infinite loop due to floating-point precision issues, or terminate unexpectedly after a very large number of iterations.
+
+D) The program compiles and terminates in a NullPointerException.
+
+Question 30
+===========
+
+Assume StringBuilder strBuilder is "ABCCEFC", after invoking ________, strBuilder contains "ABTTEFT".
+
+A) strBuilder.replace("CC", "TT")
+
+B) strBuilder.replace("C", "T")
+
+C) strBuilder.replace('C', 'T')
+
+D) strBuilder.replace('C', "TT")
+
+E) strBuilder.replace(2, 7, "TTEFT")
+
+Question 31
+===========
+
+Is the following statement valid in Java?
+
+  char[2][2][] charArray = {'a', 'b'};
+
+A) Yes
+
+B) No
+
+Question 32
+===========
+
+Which of the following expressions correctly calculates the distance between the points (40, 50) and (5.5, 4.4)?
+
+  public class Test {
+    public static void main(String[] args) {
+      double result = distance(40, 50, 5.5, 4.4);
+      System.out.println(result);
+    }
+
+    public static double distance(double x1, double y1, double x2, double y2) {
+      return Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2));
+    }
+  }
+
+A) Math.distance(40, 50, 5.5, 4.4)
+
+B) computeDistance(40.0, 50.0, 5.5, 4.4)
+
+C) getDistance(40, 50, 5.5, 4.4)
+
+D) distance(new double[]{40, 50}, new double[]{5.5, 4.4})
+
+E) distance(40, 50, 5.5, 4.4)
+
+Question 33
+===========
+
+What is the output of the following program?
+
+  public class Test {
+    public static void main(String[] args) {
+      int[][] values = {{3, 4, 5, 1 }, {33, 6, 1, 2}};
+
+      for (int row = 0; row < values.length; row++) {
+        java.util.Arrays.sort(values[row]);
+        for (int column = 0; column < values[row].length; column++)
+          System.out.print(values[row][column] + " ");
+        System.out.println();
+      }
+    }
+  }
+
+A) The program prints on row 3 4 5 1 33 6 1 2.
+
+B) The program prints one row 1 3 4 5 1 2 6 33.
+
+C) The program prints two rows 3 4 5 1 followed by 33 6 1 2.
+
+D) The program prints two rows 3 4 5 1 followed by 2 1 6 33.
+
+E) The program prints two rows 1 3 4 5 followed by 1 2 6 33.
+
+Question 34
+===========
+
+Suppose int i = 5; Can i + 6.5 be used as an index for the array double[] t = new double[100];?
+
+A) Yes
+
+B) No
+
+Question 35
+===========
+
+Which is the advantage of encapsulation?
+
+A) It enables changes to a class's contract without changing the implementation and causes no consequential changes to other code.
+
+B) It enables changes to the implementation without changing a class's contract and causes no consequential changes to other code.
+
+C) Only public methods are needed.
+
+D) Making the class final causes no consequential changes to other code.
+
+Question 36
+===========
+
+What is the value of the following expression?
+
+    true || true && false
+
+A) true
+
+B) false
+
+Question 37
+===========
+
+Variables that are shared by every instance of a class are ________.
+
+A) class variables
+
+B) instance variables
+
+C) public variables
+
+D) private variables
+
+Question 38
+===========
+
+The command to view all variables in JShell is ________.
+
+A) /vars
+
+B) \vars
+
+C) /var
+
+D) \var
+
+Question 39
+===========
+
+When invoking a method with an object argument, ________ is passed.
+
+A) a copy of the object
+
+B) the object is copied, then the reference of the copied object
+
+C) the contents of the object
+
+D) the reference of the object
+
+Question 40
+===========
+
+Assume StringBuilder strBuilder is "ABCDEFG", after invoking ________, strBuilder contains "ABCRRRRDEFG".
+
+A) strBuilder.insert(2, "RRRR")
+
+B) strBuilder.insert(3, "RRRR")
+
+C) strBuilder.insert(4, "RRRR")
+
+D) strBuilder.insert(1, "RRRR")
+
+Question 41
+===========
+
+The following program displays ________.
+
+  public class Test {
+    public static void main(String[] args) {
+      String s = "Java";
+      StringBuilder builder = new StringBuilder(s);
+      change(s);
+      System.out.println(s);
+    }
+
+    private static void change(String s) {
+      s = s + " and HTML";
+    }
+  }
+
+A) and HTML
+
+B) Java
+
+C) nothing is displayed
+
+D) Java and HTML
+
+Question 42
+===========
+
+The JDK (Java Development Kit) command to just compile a class (not run) in the file Test.java is ________.
+
+A) java Test
+
+B) javac Test.java
+
+C) javac Test
+
+D) JAVAC Test.java
+
+E) java Test.java
+
+Question 43
+===========
+
+Analyze the following code:
+
+  public class Test {
+    public static void main(String argv[]) {
+      System.out.println("argv.length is " + argv.length);
+    }
+  }
+
+A) The program has a compile error because String argv[] is wrong and it should be replaced by String[] args.
+
+B) If you run this program without passing any arguments, the program would have a runtime error because argv is null.
+
+C) The program has a compile error because String argv[] is wrong and it should be replaced by String args[].
+
+D) If you run this program without passing any arguments, the program would display argv.length is 0.
+
+Question 44
+===========
+
+Assume int[] scores = {1, 20, 30, 40, 50}, what value does java.util.Arrays.binarySearch(scores, 3) return?
+
+A) 1
+
+B) 2
+
+C) 0
+
+D) -2
+
+E) -1
+
+Question 45
+===========
+
+Which of the following correctly declares an array of int values in Java?
+
+A) double[] a;
+
+B) int a;
+
+C) int[] a;
+
+D) String[] a;
+
+Question 46
+===========
+
+________ is attached to the class of the composing class to denote the aggregation relationship with the composed object.
+
+A) An empty oval
+
+B) An empty diamond
+
+C) A solid diamond
+
+D) A solid oval
+
+Question 47
+===========
+
+Is the following method declaration correct?
+
+  public static void print(int n, double... numbers)
+
+A) Yes
+
+B) No
+
+Question 48
+===========
+
+What is x after the following statements?
+
+int x = 2;
+int y = 1;
+x *= y + 1;
+
+A) x is 1.
+
+B) x is 3.
+
+C) x is 2.
+
+D) x is 4.
+
+Question 49
+===========
+
+Which of the following are correct names for variables according to Java naming conventions?
+
+A) radius
+
+B) 9findArea
+
+C) Radius
+
+D) RADIUS
+
+E) FindArea
+
+Question 50
+===========
+
+24 % 5 is ________
+
+A) 1
+
+B) 4
+
+C) 2
+
+D) 3
+
+E) 0
+
+Question 51
+===========
+
+Analyze the following recursive method.
+
+    public static long factorial(int n) {
+      return n * factorial(n - 1);
+    }
+
+A) The method runs infinitely and causes a StackOverflowError.
+
+B) Invoking factorial(1) returns 1.
+
+C) Invoking factorial(3) returns 6.
+
+D) Invoking factorial(2) returns 2.
+
+E) Invoking factorial(0) returns 0.
+
+Question 52
+===========
+
+Which of the following are data storage devices?
+
+A) joystick
+
+B) CD-ROM
+
+C) laser pointer
+
+D) keyboard
+
+Question 53
+===========
+
+Which of the following is the correct expression that evaluates to true if the number x is between 1 and 100 or the number is negative?
+
+A) ((x < 100) && (x > 1)) || (x < 0)
+
+B) 1 < x < 100 && x < 0
+
+C) ((x < 100) && (x > 1)) && (x < 0)
+
+D) (1 > x > 100) || (x < 0)
+
+Question 54
+===========
+
+What is i printed?
+
+public class Test {
+  public static void main(String[] args) {
+    int j = 0;
+    int i = ++j + j * 5;
+
+    System.out.println("What is i? " + i);
+  }
+}
+
+A) 0
+
+B) 1
+
+C) 5
+
+D) 6
+
+Question 55
+===========
+
+What would be the result of attempting to compile and run the following code?
+
+  public class Test {
+    public static void main(String[] args) {
+      double[] x = new double[]{1, 2, 3};
+      System.out.println("Value is " + x[1]);
+    }
+  }
+
+A) The program compiles and runs fine and the output "Value is 2.0" is printed.
+
+B) The program has a compile error because the syntax new double[]{1, 2, 3} is wrong and it should be replaced by new double[3]{1, 2, 3};
+
+C) The program has a compile error because the syntax new double[]{1, 2, 3} is wrong and it should be replaced by new double[]{1.0, 2.0, 3.0};
+
+D) The program compiles and runs fine and the output "Value is 1.0" is printed.
+
+E) The program has a compile error because the syntax new double[]{1, 2, 3} is wrong and it should be replaced by {1, 2, 3}.
+
+Question 56
+===========
+
+Assume s is " abc ", the method ________ returns a new string "abc".
+
+A) trim(s)
+
+B) s.trim()
+
+C) String.trim(s)
+
+D) s.trim(s)
+
+Question 57
+===========
+
+________ is interpreted.
+
+A) Pascal
+
+B) Ada
+
+C) C++
+
+D) C
+
+E) Java
+
+Question 58
+===========
+
+Which of the following assignment statements is INCORRECT?
+
+A) l = m = n = o = 1;
+
+B) i == j == k == 1;
+
+C) i = 1; j = 1; k = 1;
+
+D) i = j = k = 1;
+
+Question 59
+===========
+
+Analyze the following code:
+
+  public class Test {
+    public static void main(String[] args) {
+      int[] a = new int[4];
+      a[1] = 1;
+      a = new int[2];
+      System.out.println("a[1] is " + a[1]);
+    }
+  }
+
+A) The program displays a[1] is 0.
+
+B) The program displays a[1] is 1.
+
+C) The program has a runtime error because a[1] is NOT initialized.
+
+D) The program has a compile error because new int[2] is assigned to a.
+
+Question 60
+===========
+
+A variable defined inside a method is referred to as ________.
+
+A) a block variable
+
+B) a method variable
+
+C) a global variable
+
+D) a local variable
+
+Question 61
+===========
+
+What is the output of the following program?
+
+  public class Test {
+    public static void main(String[] args) {
+      int[][] values = {{3, 4, 5, 1}, {33, 6, 1, 2}};
+
+      for (int row = 0; row < values.length; row++) {
+        System.out.print(m(values[row]) + " ");
+      }
+    }
+
+    public static int m(int[] list) {
+      int v = list[0];
+      for (int i = 1; i < list.length; i++)
+        if (v < list[i])
+          v = list[i];
+      return v;
+    }
+  }
+
+A) 1 1
+
+B) 33 5
+
+C) 5 6
+
+D) 5 33
+
+E) 3 33
+
+Question 62
+===========
+
+Is the following a correct header for the main method in Java?
+
+  public static void main(String x[])
+
+A) No
+
+B) Yes
+
+Question 63
+===========
+
+Which of the following is a practical advantage of encapsulating data fields?
+
+A) Encapsulation helps prevent programming errors.
+
+B) Encapsulation reduces indentation levels.
+
+C) Encapsulation ensures shorter code execution time.
+
+D) Encapsulation automatically optimizes memory usage.
+
+E) Encapsulation generates documentation automatically.
+
+Question 64
+===========
+
+Fill in the code to complete the following method for binary search.
+
+  public static int recursiveBinarySearch(int[] list, int key) {
+    int low = 0;
+    int high = list.length - 1;
+    return ________;
+  }
+
+  public static int recursiveBinarySearch(int[] list, int key,
+      int low, int high) {
+    if (low > high)  // The list has been exhausted without a match
+      return -low - 1; // Return -insertion point - 1
+
+    int mid = (low + high) / 2;
+    if (key < list[mid])
+      return recursiveBinarySearch(list, key, low, mid - 1);
+    else if (key == list[mid])
+      return mid;
+    else
+      return recursiveBinarySearch(list, key, mid + 1, high);
+  }
+
+A) recursiveBinarySearch(list, key, low - 1, high + 1)
+
+B) recursiveBinarySearch(list, key, low, high)
+
+C) recursiveBinarySearch(list, key)
+
+D) recursiveBinarySearch(list, key, low + 1, high - 1)
+
+Question 65
+===========
+
+Suppose income is 4001, what is the output of the following code?
+
+    if (income > 3000) {
+        System.out.println("Income is greater than 3000");
+    }
+    else if (income > 4000) {
+        System.out.println("Income is greater than 4000");
+    }
+
+A) Income is greater than 4000
+
+B) Income is greater than 3000 followed by Income is greater than 4000
+
+C) Income is greater than 3000
+
+D) Income is greater than 4000 followed by Income is greater than 3000
+
+E) no output

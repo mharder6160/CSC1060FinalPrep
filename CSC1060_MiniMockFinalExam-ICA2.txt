@@ -1,0 +1,457 @@
+Question 1
+
+The following code has ________.
+
+public class Test {
+  public static void main(String[] args) {
+    System.out.println("Welcome to Java!);
+  }
+}
+
+A) a logic error
+
+B) a compile error
+
+C) a runtime error
+
+Question 2
+
+Which statement correctly describes object-type properties within immutable objects?
+
+A) A readable object-type property in an immutable object must also be immutable.
+
+B) Object-type properties are converted to primitives before assignment.
+
+C) Object-type properties must be reassigned in a synchronized block.
+
+D) Readable object-type properties must implement the Serializable interface.
+
+E) Object-type properties should be declared with volatile.
+
+Question 3
+
+What is the output of the following code?
+
+  public class Test {
+    public static void main(String[] args) {
+
+      String s = "University";
+      s.replace("i", "ABC");
+      System.out.println(s);
+
+    }
+  }
+
+A) UnABCversity
+
+B) UniversABCty
+
+C) UnABCversABCty
+
+D) University
+
+Question 4
+
+What is the output of System.out.println('z' - 'a')?
+
+A) 25
+
+B) z
+
+C) a
+
+D) 26
+
+Question 5
+
+A computer's ________ is volatile; that is, any information stored in it is lost when the system's power is turned off.
+
+A) CD-ROM
+
+B) hard disk
+
+C) memory
+
+D) flash stick
+
+Question 6
+
+Variables that are shared by every instance of a class are ________.
+
+A) instance variables
+
+B) private variables
+
+C) class variables
+
+D) public variables
+
+Question 7
+
+Which of the following statements best describes a benefit of encapsulating data fields?
+
+A) Encapsulation makes the program faster.
+
+B) Encapsulation shortens the source code.
+
+C) Encapsulation makes the program easier to maintain.
+
+D) Encapsulation eliminates the need for comments.
+
+E) Encapsulation avoids using constructors.
+
+Question 8
+
+________ is a technical definition of the language that includes the syntax and semantics of the Java programming language.
+
+A) Java language specification
+
+B) Java IDE (Integrated Development Environment)
+
+C) Java API (Application Programming Interface)
+
+D) Java JDK (Java Development Kit)
+
+Question 9
+
+-24 % -5 is ________
+
+A) 4
+
+B) 0
+
+C) -4
+
+D) -3
+
+E) 3
+
+Question 10
+
+What is the output of the following code?
+
+    int x = 0;
+    if (x < 4) {
+        x = x + 1;
+    }
+    System.out.println("x is " + x):
+
+A) x is 0.
+
+B) x is 1.
+
+C) x is 2.
+
+D) x is 3.
+
+E) x is 4.
+
+Question 11
+
+Which of the following is the best for generating random integer 0 or 1?
+
+A) (int)Math.random() + 1
+
+B) (int)(Math.random() + 0.2)
+
+C) (int)Math.random()
+
+D) (int)(Math.random() + 0.8)
+
+E) (int)(Math.random() + 0.5)
+
+Question 12
+
+Which of the following is a valid way to declare an integer array in Java?
+
+A) int a[];
+
+B) int a;
+
+C) boolean[] a;
+
+D) double a;
+
+Question 13
+
+Which of the following statements is correct?
+
+A) Every statement in a program must end with a semicolon.
+
+B) Every line in a program must end with a semicolon.
+
+C) Every class must end with a semicolon.
+
+D) Every method must end with a semicolon.
+
+E) Every comment line must end with a semicolon.
+
+Question 14
+
+Assume int[][] x = {{1, 2}, {3, 4}, {5, 6}}, what are x.length are x[0].length?
+
+A) 2 and 3
+
+B) 2 and 1
+
+C) 3 and 3
+
+D) 2 and 2
+
+E) 3 and 2
+
+Question 15
+
+Which of the following is the correct statement to return a string from an array a of characters?
+
+A) new String(a)
+
+B) convertToString(a)
+
+C) toString(a)
+
+D) String.toString(a)
+
+Question 16
+
+The signature of a method consists of ________.
+
+A) method name and parameter list
+
+B) return type, method name, and parameter list
+
+C) method name
+
+D) parameter list
+
+Question 17
+
+Which code fragment would correctly identify the number of arguments passed via the command line to a Java application, excluding the name of the class that is being invoked?
+
+A) int count = args.length - 1;
+
+B) int count = args.length;
+
+C) int count=0; while (!(args[count].equals(""))) count ++;
+
+D) int count = 0; while (args[count] != null) count ++;
+
+Question 18
+
+The statement System.out.printf("%3.1f", 1234.56) outputs ________.
+
+A) 123.4
+
+B) 1234.5
+
+C) 1234.6
+
+D) 1234.56
+
+E) 123.5
+
+Question 19
+
+Is the following statement valid?
+
+  char[] c = new char();
+
+A) Yes
+
+B) No
+
+Question 20
+
+What is the output of the following code?
+
+  public class Test {
+    public static void main(String[] args) {
+      String s1 = "Welcome to Java!";
+      String s2 = s1;
+
+      if (s1 == s2)
+        System.out.println(
+          "s1 and s2 reference the same String object");
+      else
+        System.out.println(
+          "s1 and s2 reference different String objects");
+    }
+  }
+
+A) s1 and s2 reference the same String object
+
+B) s1 and s2 reference different String objects
+
+Question 21
+
+The speed of the CPU (Central Processing Unit) may be measured in ________.
+
+A) megabytes
+
+B) nanobytes
+
+C) gigahertz
+
+D) gigabytes
+
+Question 22
+
+________ are instructions to the computer.
+
+A) Software
+
+B) Keyboards
+
+C) Hardware
+
+D) Laser Pointer
+
+Question 23
+
+Suppose int x = 3264, what is the output of the following code?
+
+  int y = x % 10;
+  x = x / 10;
+  System.out.println("x is " + x + " and y is " + y);
+
+A) x is 4 and y is 326
+
+B) x is 3264 and y is 326.4
+
+C) x is 3264 and y is 4
+
+D) x is 326 and y is 4
+
+E) x is 326 and y is 326
+
+Question 24
+
+Assume x = 4, which of the following is true?
+
+A) x != 4
+
+B) x == 5
+
+C) x != 5
+
+D) !(x == 4)
+
+Question 25
+
+Which of the following statements are correct?
+
+A) char[2][2] charArray = {{'a', 'b'}, {'c', 'd'}};
+
+B) char[][] charArray = {'a', 'b'};
+
+C) char[][] charArray = {{'a', 'b'}, {'c', 'd'}};
+
+D) char[2][] charArray = {{'a', 'b'}, {'c', 'd'}};
+
+Question 26
+
+Fill in the code to complete the following method for sorting a list.
+
+  public static void sort(double[] list) {
+    ________;
+  }
+
+  public static void sort(double[] list, int high) {
+    if (high > 1) {
+      // Find the largest number and its index
+      int indexOfMax = 0;
+      double max = list[0];
+      for (int i = 1; i <= high; i++) {
+        if (list[i] > max) {
+          max = list[i];
+          indexOfMax = i;
+        }
+      }
+
+      // Swap the largest with the last number in the list
+      list[indexOfMax] = list[high];
+      list[high] = max;
+
+      // Sort the remaining list
+      sort(list, high - 1);
+    }
+  }
+
+A) sort(list)
+
+B) sort(list, list.length)
+
+C) sort(list, list.length - 2)
+
+D) sort(list, list.length - 1)
+
+Question 27
+
+Suppose x=10 and y=10. What is x after evaluating the expression (y >= 10) || (x++ > 10)?
+
+A) 11
+
+B) 9
+
+C) 10
+
+Question 28
+
+What is sum after the following loop terminates?
+
+  int sum = 0;
+  int item = 0;
+  do {
+    item++;
+    sum += item;
+    if (sum > 4)
+      break;
+  }
+  while (item < 5);
+
+A) 7
+
+B) 5
+
+C) 9
+
+D) 8
+
+E) 6
+
+Question 29
+
+________ is the code with natural language mixed with Java code.
+
+A) A flowchart diagram
+
+B) Java program
+
+C) A Java statement
+
+D) Pseudocode
+
+Question 30
+
+Which statement best describes the purpose of nextDouble() in the Random class?
+
+  import java.util.Random;
+
+  public class Test {
+    public static void main(String[] args) {
+      Random rand = new Random();
+      double value = rand.nextDouble();
+      System.out.println(value);
+    }
+  }
+
+A) It generates the next pseudorandom double between 0.0 and 1.0.
+
+B) It generates a double between -1.0 and 1.0.
+
+C) It converts a generated integer to a decimal.
+
+D) It always returns a fixed constant for testing purposes.
+
+E) It creates a new double value from a specified seed.
+
